@@ -27,10 +27,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: HR People Analytics (Soon)
-      tag: SEM Analysis
-    - name: HR People Analytics (Soon)
-      tag: Survival Analysis
+    - name: SEM Analysis (Soon)
+      tag: Deep Learning
+    - name: Survival Analysis (Soon)
+      tag: Demo
+    - name: Case Competitions (Soon)
+      tag: Demo
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
