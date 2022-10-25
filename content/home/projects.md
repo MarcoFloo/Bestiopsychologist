@@ -33,6 +33,9 @@ content:
       tag: Demo
     - name: Case Competitions (Soon)
       tag: Demo
+    - name: Site Building Using R
+      tag: Demo
+
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
