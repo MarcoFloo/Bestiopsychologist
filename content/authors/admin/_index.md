@@ -36,7 +36,7 @@ social:
   link: https://linkedin.com/in/marco-f-093326225
 - icon: cv
   icon_pack: ai
-  link: file:///C:/Users/florm/OneDrive/Documents/Marco%20Flores%20Resume.pdf
+  link: https://drive.google.com/file/d/1XXJnB987dQA_tHnzpxumq8vwo72_fxpQ/view?usp=sharing
 
 superuser: true
 bio: My work inters include people analytics, leadership, organizational behavior
