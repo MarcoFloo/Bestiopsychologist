@@ -28,13 +28,13 @@ content:
     - name: All
       tag: '*'
     - name: SEM Analysis (Soon)
-      tag: Deep Learning
+      tag: '*'
     - name: Survival Analysis (Soon)
-      tag: Demo
+      tag: '*'
     - name: Case Competitions (Soon)
-      tag: Demo
+      tag: '*'
     - name: Site Building Using R
-      tag: Demo
+      tag: '*'
 
 
 design:
