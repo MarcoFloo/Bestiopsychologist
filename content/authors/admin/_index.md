@@ -39,7 +39,7 @@ social:
   link: https://drive.google.com/file/d/1XXJnB987dQA_tHnzpxumq8vwo72_fxpQ/view?usp=sharing
 
 superuser: true
-bio: My work inters include people analytics, leadership, organizational behavior
+bio:
 ---
 
 I am a Master student in Industrial Organizational Psychology at Texas A&M University.
