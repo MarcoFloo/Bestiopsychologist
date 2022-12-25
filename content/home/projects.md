@@ -26,13 +26,13 @@ content:
   # To remove the toolbar, delete the entire `filter_button` block.
   filter_button:
     - name: All
-      tag: 'tag'
-    - name: Cluster Analysis
       tag: '*'
+    - name: Cluster Analysis
+      tag: 'Cluster Analysis'
     - name: HR Data Analytics 
       tag: '*'
     - name: Hierarchical Regression
-      tag: '*'
+      tag: 'Hierarchical Regression'
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
