@@ -1,6 +1,6 @@
 ---
 title: Hierarchical Regression
-summary: Hierarchical regression is a way to show if variables of your interest explain a statistically significant amount of variance in your Dependent Variable (DV) after accounting for all other variables
+summary: Hierarchical regression is a way to show if variables of your interest explain a statistically significant amount of variance in your Dependent Variable (DV) after accounting for all other variables.
 tags:
   - 
 date: '2016-04-27T00:00:00Z'
