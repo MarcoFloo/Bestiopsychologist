@@ -16,7 +16,7 @@ interests:
 - Human Capital Advisory
 - Organizational Behavior
 - Managing Groups and Teams
-- Statistical Inference
+- Chess
 last_name: Flores
 organizations:
 - name: Texas A&M University

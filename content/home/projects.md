@@ -27,15 +27,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: SEM Analysis (Soon)
+    - name: Cluster Analysis
       tag: '*'
-    - name: Survival Analysis (Soon)
+    - name: HR Data Analytics 
       tag: '*'
-    - name: Case Competitions (Soon)
+    - name: Hierarchical Regression
       tag: '*'
-    - name: Site Building Using R
-      tag: '*'
-
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
