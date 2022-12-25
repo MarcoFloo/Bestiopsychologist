@@ -26,7 +26,7 @@ content:
   # To remove the toolbar, delete the entire `filter_button` block.
   filter_button:
     - name: All
-      tag: '*'
+      tag: 'tag'
     - name: Cluster Analysis
       tag: '*'
     - name: HR Data Analytics 
