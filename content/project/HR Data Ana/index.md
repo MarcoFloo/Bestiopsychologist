@@ -1,6 +1,6 @@
 ---
 title: HR Data Analytics
-summary: 
+summary: Logistic Regression is a type of machine learning algorithm that is used to predict/forecast variables that are categorical in nature.It is used to solve classification tasks.
   - 
 date: '2016-04-27T00:00:00Z'
 
