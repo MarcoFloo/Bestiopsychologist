@@ -73,8 +73,6 @@ o Income: It seems that employees who left were paid less on average than those
 who stayed. These differences were most significant within the HR and Research
 and Development departments. (HR should know better!)
 
-{{< figure src="download.jpg" caption="A caption" numbered="true" >}}
-
 
 -What factors significantly relate to each other? A correlation matrix displays correlations
 between 2 variables. Although this analysis can be conducted in Excel, R can sort the
