@@ -73,7 +73,7 @@ o Income: It seems that employees who left were paid less on average than those
 who stayed. These differences were most significant within the HR and Research
 and Development departments. (HR should know better!)
 
-{{< figure src="hero-academic.jpg" caption="A caption" numbered="true" >}}
+{{< figure src="download.jpg" caption="A caption" numbered="true" >}}
 
 
 -What factors significantly relate to each other? A correlation matrix displays correlations
