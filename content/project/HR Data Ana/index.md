@@ -73,6 +73,8 @@ o Income: It seems that employees who left were paid less on average than those
 who stayed. These differences were most significant within the HR and Research
 and Development departments. (HR should know better!)
 
+{{< figure src="download.jpg" caption="A caption" numbered="true" >}}
+
 
 -What factors significantly relate to each other? A correlation matrix displays correlations
 between 2 variables. Although this analysis can be conducted in Excel, R can sort the
@@ -80,14 +82,7 @@ significant correlations together! This feature can help us quickly visualize th
 relationships, rather than having to look around the entire visual.
 What we see:
 
-{{< figure src="download.jpg" caption="
-o The higher the job level, the higher the monthly income (r=.95).
 
-o The higher the job level, the higher the total working years (r=.78).
-
-o The higher the percent salary hike, the higher the performance (rating r=.77).
-
-o The higher the total working years, the higher the monthly income (r=.77)." numbered="true" >}}
 
 o The higher the job level, the higher the monthly income (r=.95).
 
@@ -115,7 +110,7 @@ overall statistical power of our model.
 -After removing “Job Level” from the data set, we can now see that none of our VIF
 scores are close to approaching 10. Let’s create our final model!
 
-**Interpreting the Model:**
+-Interpreting the Model:
 
 Let’s use machine learning to further evaluate our logistic regression model.
 A Confusion Matrix is a classification model, using supervised learning, that allows us to
@@ -147,7 +142,7 @@ the better our model is classifying turnover as staying (1 as 1) and leaving (0 
 -Lack Of Tenure
 
 
-**Recommendations:**
+Recommendations:
 
 -Incomes can be increased to increase retention. Although we don’t know this
 organization’s overtime policy, either limiting the amount of overtime or increasing its
@@ -162,7 +157,7 @@ important to understand why employees stay. Deploying an engagement survey can
 provide additional insight for which factors keep employees at the organization.
 
 
-**Why does this matter?:**
+-Why does this matter?:
 
 HR professionals, managers, and C-Suite members generally believed seeking a higher income
 was the key motivator, for employees quitting, during the Great Resignation. Our exploratory
