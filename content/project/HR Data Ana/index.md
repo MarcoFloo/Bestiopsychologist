@@ -25,11 +25,13 @@ url_video: ''
 slides: ''
 ---
 
-What is the purpose of this project?
--Begin as a Beginner: I am a beginner to the world of people analytics. As someone
+My Start: I am a beginner to the world of people analytics. As someone
 exploring the capabilities of R and Tableau, I hope this marks the beginning of a journey
 where I can share my abilities and learn from others. Feel free to write to me if you have
 suggestions or you would like to see something added!
+
+-Background Info About The Project:
+
 
 -Descriptive and Inferential Data Analysis: I am passionate about using the story telling
 of data to better explain HR metrics. Although there might be trends or eye-catching
@@ -61,19 +63,22 @@ distributed) helps us determine what further analyses we can conduct.
 major differences of the monthly average income between genders. This is good news for
 both our employees and the organization!
 
--Here’s where things get interesting.
+-Here’s where things get interesting...
+
 o Age cohorts: Gen-Z workers show the highest frequency of turnover rate at
 around 36%- most likely to pursue other career opportunities. Boomers have the
 next highest proportion of employees leaving at 17%- most likely to retire.
+
 o Income: It seems that employees who left were paid less on average than those
 who stayed. These differences were most significant within the HR and Research
 and Development departments. (HR should know better!)
 
- What factors significantly relate to each other? A correlation matrix displays correlations
+-What factors significantly relate to each other? A correlation matrix displays correlations
 between 2 variables. Although this analysis can be conducted in Excel, R can sort the
 significant correlations together! This feature can help us quickly visualize the strongest
 relationships, rather than having to look around the entire visual.
 What we see:
+
 o The higher the job level, the higher the monthly income (r=.95).
 
 o The higher the job level, the higher the total working years (r=.78).
@@ -123,17 +128,16 @@ percentage of non-terms who were classified as terms, and we want to minimize. W
 determine its strength by looking at the are under the ROC curve or AUC. The higher our AUC,
 the better our model is classifying turnover as staying (1 as 1) and leaving (0 as 0).
 
-Recommendations:
-Top reasons people leave the organization.
--Monthly income- unsurprisingly, those with lower salaries left the organization.
--Overtime- those who work longer hours during a standard 40-hour work week must feel
-burned out or undercompensated.
+-Top Reasons For Leaving:
 
--Tenure- the number of years one works at a company was detected as a more significant
-predictor than age. While the rate of turnover differed between age cohorts, the amount of
-time they were eligible to stay with the organization also differed, so understanding
-individuals’ tenure is a more effective way to predict their behavior.
-What should be done:
+-Monthly income.
+
+-Longer Hours
+
+-Lack Of Tenure
+
+
+Recommendations:
 
 -Incomes can be increased to increase retention. Although we don’t know this
 organization’s overtime policy, either limiting the amount of overtime or increasing its
