@@ -24,7 +24,7 @@ url_video: ''
 #   Otherwise, set `slides = ""`.
 slides: ''
 ---
-Hierarchical Regression: Explained
+Hierarchical Regression: Background
 
 Human resource management is one of the key aspects of an organization's success, and statistical analysis plays a crucial role in understanding and predicting employee behavior. Hierarchical regression is one of the most widely used statistical techniques for analyzing employee data in human resources.
 
