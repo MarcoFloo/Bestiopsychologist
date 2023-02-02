@@ -44,6 +44,29 @@ After using the elbow method, the silhouette method, and the gap statistic metho
 
 The cluster plot also indicated that three clusters are sufficiently separate, and the overlapping area is small. A table showing the species along with their cluster assignments was created. The first cluster perfectly matched the first species. The second cluster is also acceptable. The third cluster is acceptable, but not as accurate as the first two clusters since it includes cases for the other two species. Overall, the cluster analysis suggests that three clusters is appropriate for the three species data.
 
+**This project was run in R (a programming language for statistical computing and graphics) using the following code:**
+
+
+dat1<- Data_A6_Task1[, 2:5]
+
+fviz_nbclust(dat1, kmeans, method ="wss")+
+  geom_vline(xintercept=5, linetype=2)        
+
+fviz_nbclust(dat1, kmeans, method = "silhouette")
+
+fviz_nbclust(dat1, kmeans, method = "gap_stat")
+
+km.res<-eclust(dat1, "kmeans", k=3, nstart=25, graph = TRUE)     
+km.res
+
+dat2<-cbind(dat1, cluster=km.res$cluster)
+
+fviz_silhouette(km.res, palette="jco", ggtheme=theme_classic())
+
+table(dat2$Species, dat2cluster)
+write.csv(dat2,"cluster_assign.csv")
+
+
 
 Conclusion
 
