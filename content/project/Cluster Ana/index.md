@@ -35,6 +35,16 @@ There are several ways in which cluster analysis can be used in Human Resources:
 
 4.Employee Development: Cluster analysis can be used to identify areas where employees may need further development. For example, if a group of employees are found to have similar skills and behaviors, HR managers may want to provide additional training or resources to help them grow in their careers.
 
+**Class Project**
+
+For an example given in class A K-means cluster analysis was performed to compare three species of iris flowers (senosa, versicolor, virginica) that were measured in four categories (sepal length/width and pedal length/width) with generated clusters. 
+
+
+After using the elbow method, the silhouette method, and the gap statistic method, the graphs showed that the optimal number of clusters was two-four clusters. However, there are only three different species of iris flower. The estimated average silhouette width for the three clusters was 0.55, which indicated that having three clusters is acceptable. 
+
+The cluster plot also indicated that three clusters are sufficiently separate, and the overlapping area is small. A table showing the species along with their cluster assignments was created. The first cluster perfectly matched the first species. The second cluster is also acceptable. The third cluster is acceptable, but not as accurate as the first two clusters since it includes cases for the other two species. Overall, the cluster analysis suggests that three clusters is appropriate for the three species data.
+
+
 Conclusion
 
 Cluster analysis is a valuable tool for Human Resources professionals looking to make informed decisions about employee development, team formation, and job placement. By grouping employees based on their similarities, HR managers can gain valuable insights into their employees and use this information to improve their operations. With the right tools and techniques, cluster analysis can be a powerful tool for improving employee performance and satisfaction
