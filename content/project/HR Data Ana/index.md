@@ -1,6 +1,6 @@
 ---
 title: HR Data Analytics
-summary: Logistic Regression is a type of machine learning algorithm that is used to predict/forecast variables that are categorical in nature. Here I use it on real world data from the IBM HR Data Analytics set.
+summary: Logistic Regression is a type of machine learning algorithm that is used to predict/forecast variables that vary in numerical nature. Here I use it on real world data from the IBM HR Data Analytics set.
 tags:
   -    
 date: '2016-04-27T00:00:00Z'
@@ -36,7 +36,15 @@ Employee Promotion: Another use case for logistic regression in HR is to predict
 
 One advantage of using logistic regression in HR is that it can handle a large number of predictor variables and provide a clear and understandable prediction of the outcome. Additionally, logistic regression is easy to implement and can be used with a variety of data types, including continuous, categorical, and binary variables.
 
-**HR Data Analytics Project**
+**HR Data Analytics Project: Background**
+
+IBM has made a significant contribution to the field of Human Resources by launching an innovative HR data analytics set. This set provides companies with a wealth of information about their employees, enabling them to make informed decisions about their workforce.
+
+One of the key features of the IBM HR data analytics set is the ability to track employee performance over time. This information is crucial for companies to understand how their employees are performing and where they may need to focus their development efforts. The data can be used to identify trends and patterns in employee performance, helping companies to identify areas for improvement and to better allocate resources.
+
+Another important aspect of the IBM HR data analytics set is the ability to track employee engagement. Employee engagement is a critical factor in the success of any organization, and the data provided by the analytics set can help companies to understand the level of engagement among their workforce. This information can be used to identify areas where engagement may be lacking, and to develop strategies to improve employee engagement and job satisfaction.
+
+**My COntribution**
 
 Model with Machine Learning: The ultimate goal is to create a model to predict
 whether an employee will quit or stay. Logistic regression is a statistical technique that
@@ -148,7 +156,7 @@ the better our model is classifying turnover as staying (1 as 1) and leaving (0 
 
 **Recommendations:**
 
--Incomes can be increased to increase retention. Although we don’t know this
+1. Companies may consider pay raises to increase retention. Although we don’t know this
 organization’s overtime policy, either limiting the amount of overtime or increasing its
 incentive could decrease turnover.
 
@@ -161,7 +169,7 @@ important to understand why employees stay. Deploying an engagement survey can
 provide additional insight for which factors keep employees at the organization.
 
 
-**Why does this matter?:**
+**Conclusion**
 
 HR professionals, managers, and C-Suite members generally believed seeking a higher income
 was the key motivator, for employees quitting, during the Great Resignation. Our exploratory
@@ -172,6 +180,3 @@ constrained? Addressing the other significant variables could provide a more cos
 personalized approach. Overall, using advanced, statistical models created a better judgment of
 employees’ behavior to predict attrition.
 
-conclusion
-
-logistic regression is a powerful tool in the field of HR and can help organizations make informed decisions about employee attrition and promotion. By analyzing past data, the model can provide valuable insights into employee behavior and help HR managers take proactive measures to retain valuable employees and reward high-performing employees.
