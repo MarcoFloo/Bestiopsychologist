@@ -37,7 +37,7 @@ There are several ways in which cluster analysis can be used in Human Resources:
 
 **Class Project**
 
-For an example given in class A K-means cluster analysis was performed to compare three species of iris flowers (senosa, versicolor, virginica) that were measured in four categories (sepal length/width and pedal length/width) with generated clusters. 
+In class I performed a K-means cluster analysis to compare three species of iris flowers (senosa, versicolor, virginica) that were measured in four categories (sepal length/width and pedal length/width) with generated clusters. 
 
 
 After using the elbow method, the silhouette method, and the gap statistic method, the graphs showed that the optimal number of clusters was two-four clusters. However, there are only three different species of iris flower. The estimated average silhouette width for the three clusters was 0.55, which indicated that having three clusters is acceptable. 
