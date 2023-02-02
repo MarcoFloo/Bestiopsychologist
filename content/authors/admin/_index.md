@@ -42,4 +42,4 @@ superuser: true
 bio:
 ---
 
-This site is for sharing my projects and interests with future employers and collaborators. I created this site using R Markdown, Hugo, and Blogdown. As this is my first site I am open to all feedback and comments, feel free to reach out!
+This site is for sharing my projects and interests with future employers and collaborators. I created this site using R Markdown, Hugo, and Blogdown. As this is my first site, I am open to all feedback and comments. Feel free to reach out!
