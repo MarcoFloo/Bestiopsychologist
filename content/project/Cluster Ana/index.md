@@ -12,7 +12,7 @@ image:
   focal_point: Smart
 ---
 
-Cluster Analysis in Human Resources: Class Project
+Cluster Analysis in Human Resources: Explained
 
 Cluster analysis is a statistical method that helps group data points based on their similarities. In the field of Human Resources, this technique can be used to group employees based on their skills, behaviors, and other traits. This can be valuable in making better informed decisions about employee development, team formation, and job placement.
 
