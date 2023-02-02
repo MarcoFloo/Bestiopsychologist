@@ -1,5 +1,5 @@
 ---
-title: Welcome to my "brilliant" chess move analysis.
+title: Welcome to my "brilliant" chess move analysis
 
 # Summary for listings and search engines
 summary: 
