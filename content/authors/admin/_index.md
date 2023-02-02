@@ -2,10 +2,10 @@
 title: Marco Flores
 education:
   courses:
-  - course: MSc in Industiral Organizational Psychology
+  - course: MS in Industiral Organizational Psychology
     institution: Texas A&M University
     year: Expected 2023
-  - course: BSc in Psychology
+  - course: BS in Psychology
     institution: University of Texas Rio Grande Valley
     year: 2021
 email: "florma49055@gmail.com"
@@ -21,7 +21,7 @@ last_name: Flores
 organizations:
 - name: Texas A&M University
   url: https://liberalarts.tamu.edu/psychology/msprogram/connect-with-us/#students
-role: Master Candidate
+role: Masters Candidate
 social:
 - icon: envelope
   icon_pack: fas
@@ -42,4 +42,4 @@ superuser: true
 bio:
 ---
 
-I am a Master student in Industrial Organizational Psychology at Texas A&M University.
+This site is for sharing my projects and interests with future employers and collaborators. I created this site using R Markdown, Hugo, and Blogdown. As this is my first site I am open to all feedback and comments, feel free to reach out!
