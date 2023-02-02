@@ -25,45 +25,49 @@ url_video: ''
 slides: ''
 ---
 
-**My Start**: I am a beginner to the world of people analytics. As someone
-exploring the capabilities of R and Tableau, I hope this marks the beginning of a journey
-where I can share my abilities and learn from others. Feel free to write to me if you have
-suggestions or you would like to see something added!
-
-**Background Info About The Project:**
+**Logistic Regression: Background**
 
 
--Descriptive and Inferential Data Analysis: I am passionate about using the story telling
-of data to better explain HR metrics. Although there might be trends or eye-catching
-numbers at first glance, my goal is to dig deeper and understand what our data is really
-showing. You cannot improve what you do not measure.
+Logistic Regression is a popular statistical technique used in the field of Human Resources to predict the likelihood of a certain event happening. In HR, logistic regression is mainly used for two purposes:
 
--Model with Machine Learning: The ultimate goal is to create a model to predict
+Employee Attrition: One of the most common use cases for logistic regression in HR is to predict the likelihood of an employee leaving the company. By analyzing past data such as job satisfaction, salary, work environment, and other relevant factors, the model can predict which employees are most likely to quit their job in the near future. This information can help HR managers take proactive measures to reduce attrition and retain valuable employees.
+
+Employee Promotion: Another use case for logistic regression in HR is to predict the likelihood of an employee being promoted. By analyzing factors such as job performance, education, experience, and other relevant variables, the model can predict which employees are most likely to be promoted in the future. This information can help HR managers make informed decisions about promotions and ensure that the right employees are rewarded for their contributions.
+
+One advantage of using logistic regression in HR is that it can handle a large number of predictor variables and provide a clear and understandable prediction of the outcome. Additionally, logistic regression is easy to implement and can be used with a variety of data types, including continuous, categorical, and binary variables.
+
+**HR Data Analytics Project**
+
+Model with Machine Learning: The ultimate goal is to create a model to predict
 whether an employee will quit or stay. Logistic regression is a statistical technique that
 can differentiate which factors are more impactful towards a dichotomous outcome (e.g.,
 to leave or to stay). Adding machine learning techniques then allows us to understand the
 strength of our predictive model.
 
--Recommendations: How can the organization reduce turnover? This step is arguably the
+Ideas to keep in mind: How can the organization reduce turnover? This step is arguably the
 most important since it connects data to organizational policy.
+
+
 About this data set: IBM HR Analytics Attrition Data set is an excellent dataset to demonstrate
 logistic regression and better understand attrition. Attrition is simply the turnover rate of
 employees. This data is publicly available here.
+
+
 Exploratory Analysis
 What does our data show at a glance? We can make some interesting observations without using
 advanced methods. Although Excel and R can be used for this process, Tableau produces
 dynamic data visualizations. These analyses will also help us determine how we should work
 with our data throughout the project.
 
--Overall, about 84% of the workforce stayed while about 16% left. We can visually see
+Overall, about 84% of the workforce stayed while about 16% left. We can visually see
 this is a moderately imbalanced dataset. Knowing our dataset is skewed (not normally
 distributed) helps us determine what further analyses we can conduct.
 
--Is there a wage gap? It seems both overall and among departments that there are no
+Is there a wage gap? It seems both overall and among departments that there are no
 major differences of the monthly average income between genders. This is good news for
 both our employees and the organization!
 
-**Here’s where things get interesting...**
+**Key Insights**
 
 o Age cohorts: Gen-Z workers show the highest frequency of turnover rate at
 around 36%- most likely to pursue other career opportunities. Boomers have the
@@ -167,3 +171,7 @@ decrease the number of employees working overtime, but what if the organization 
 constrained? Addressing the other significant variables could provide a more cost-effective and
 personalized approach. Overall, using advanced, statistical models created a better judgment of
 employees’ behavior to predict attrition.
+
+conclusion
+
+logistic regression is a powerful tool in the field of HR and can help organizations make informed decisions about employee attrition and promotion. By analyzing past data, the model can provide valuable insights into employee behavior and help HR managers take proactive measures to retain valuable employees and reward high-performing employees.
