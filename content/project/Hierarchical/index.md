@@ -57,7 +57,7 @@ Conducting a hierarchical regression analysis in human resources requires severa
 
 6.Interpret the results: The results of the regression analysis must be interpreted to understand the relationship between the dependent variable and the independent variables.
 
-**Class Priject**
+**My Experience**
 
 As an example from my class: A three-stage hierarchical multiple regression was conducted with job performance as the dependent variable. Critical thinking score was entered at stage one of the regression (i.e., Model 1), conscientiousness score at stage two (i.e., Model 2), and a work sample at stage three (i.e., Model 3), based on the correlations between the three predictors and job performance.  
 

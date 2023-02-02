@@ -35,7 +35,7 @@ There are several ways in which cluster analysis can be used in Human Resources:
 
 4.Employee Development: Cluster analysis can be used to identify areas where employees may need further development. For example, if a group of employees are found to have similar skills and behaviors, HR managers may want to provide additional training or resources to help them grow in their careers.
 
-**Class Project**
+**My Experience**
 
 In class I performed a K-means cluster analysis to compare three species of iris flowers (senosa, versicolor, virginica) that were measured in four categories (sepal length/width and pedal length/width) with generated clusters. 
 
