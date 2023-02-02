@@ -39,7 +39,7 @@ categories:
   - 
   
 ---
-##What Are "Brilliant" Moves In Chess?
+*What Are "Brilliant" Moves In Chess?*
 
 
 "Brilliant"" chess moves are creative, unexpected and effective moves in a chess game that lead to a strong advantage or a quick win. Some examples of brilliant moves include sacrifices, combinations, traps, and tactical blows. The beauty of a chess move lies in its efficiency, unexpectedness, and its ability to showcase a player's understanding of the game and their opponent's weaknesses. There is no one definition of a brilliant move as it is subjective, but it often requires a deep understanding of chess strategy and tactics, good calculation skills and the ability to think creatively.
