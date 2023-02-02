@@ -57,6 +57,27 @@ Conducting a hierarchical regression analysis in human resources requires severa
 
 6.Interpret the results: The results of the regression analysis must be interpreted to understand the relationship between the dependent variable and the independent variables.
 
+**Class Priject**
+
+As an example from my class: A three-stage hierarchical multiple regression was conducted with job performance as the dependent variable. Critical thinking score was entered at stage one of the regression (i.e., Model 1), conscientiousness score at stage two (i.e., Model 2), and a work sample at stage three (i.e., Model 3), based on the correlations between the three predictors and job performance.  
+
+
+Prior to conducing the hierarchical multiple regression, the relevant assumptions of this 
+statistical analysis were tested.  As the collinearity statistic (i.e., VIF) was within accepted limits, 
+the assumption of multicollinearity was deemed to have been met (Coakes, 2005; Hair et al., 
+1998).  Residual and scatter plots indicated the assumptions of normality, linearity and 
+homoscedasticity were all satisfied (Hair et al., 1998; Pallant, 2001).    
+
+
+The regression statistic in Table 1. Model 1 was significant: F(1,174)=19.50. p<.001. Adding conscientiousness (i.e., Model 2) to the regression model explained 4% of the variance, which is the incremental validity of CONS. The change in R^2 was significant F(1, 173)= 7.85,p=.01. Adding a work sample (i.e model 3) did not contribute a significant change in R^2, and therefore did not contribute to significant incremental validity. Model 2 showed the smallest AIC and BIC, meaning this was the best model. 
+
+
+Model 2 explained a significant amount of variance in job performance F(2,173)=14.00, p<.001. The two predictors are significant; structured interview, β = .27, t(173)=3.74,p<.001; CON, β =.20 t(173)=2.80, p=.01. The R^2 is 0.14 meaning that both predictors accounted for 14% of the variance in the job performance.
+
+
+As the work sample did not provide significant incremental validity, it should not be used in the selection procedure. Structured interview had the largest beta weight, making it the best predictor of the two assessment tools.
+
+
 Conclusion
 
 Hierarchical regression is a powerful statistical technique for analyzing employee data in human resources. By taking into account the relationship between variables, it allows researchers to identify the unique impact of each predictor on the dependent variable, while controlling for the effects of other predictors. When conducting a hierarchical regression analysis in human resources, it is important to define the dependent and independent variables, collect accurate data, choose the appropriate hierarchical model, and interpret the results appropriately
