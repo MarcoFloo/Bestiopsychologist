@@ -201,7 +201,9 @@ The Original K-means cluster:
 
 
 
-After using the elbow method, the silhouette method, and the gap statistic method, the graphs showed that the optimal number of clusters was two-four clusters. However, there are only three different species of iris flower. The estimated average silhouette width for the three clusters was 0.55, which indicated that having three clusters is acceptable. 
+
+
+After using the elbow method, the silhouette method, and the gap statistic method, the graphs showed that the optimal number of clusters was between two to four clusters. However, there are only three different species of iris flower. The estimated average silhouette width for the three clusters was 0.55, which indicated that having three clusters is acceptable. 
 
 ![screen reader text](Elbow.jpg "Elbow Method")
 
@@ -216,7 +218,7 @@ After using the elbow method, the silhouette method, and the gap statistic metho
 
 
 
-The cluster plot also indicated that three clusters are sufficiently separate, and the overlapping area is small. A table showing the species along with their cluster assignments was created. The first cluster perfectly matched the first species. The second cluster is also acceptable. The third cluster is acceptable, but not as accurate as the first two clusters since it includes cases for the other two species. Overall, the cluster analysis suggests that three clusters is appropriate for the three species data.
+The cluster plot also indicated that three clusters are sufficiently separate, and the overlapping area is small. A table showing the species along with their cluster assignments was created. The first cluster perfectly matched the first species. The second cluster was also acceptable. The third cluster was acceptable, but not as accurate as the first two clusters since it includes cases for the other two species. Overall, the cluster analysis suggests that three clusters is appropriate for the three species data.
 
 **This project was run in {{< icon name="r-project" pack="fab" >}} (a programming language for statistical computing and graphics) using the following code:**
 
@@ -245,4 +247,4 @@ write.csv(dat2,"cluster_assign.csv")
 
 **Conclusion**
 
-Cluster analysis is a valuable tool for Human Resources professionals looking to make informed decisions about employee development, team formation, and job placement. By grouping employees based on their similarities, HR managers can gain valuable insights into their employees and use this information to improve their operations. With the right tools and techniques, cluster analysis can be a powerful tool for improving employee performance and satisfaction
+Cluster analysis is a valuable tool for Human Resources professionals looking to make informed decisions about employee development, team formation, and job placement. By grouping employees based on their similarities, HR managers can gain valuable insights into their employees and use this information to improve their operations. With the right tools and techniques, cluster analysis can be a powerful tool for improving employee performance and satisfaction.

@@ -2,7 +2,7 @@
 title: Marco Flores
 education:
   courses:
-  - course: MS in Industiral Organizational Psychology
+  - course: MS in Industrial Organizational Psychology
     institution: Texas A&M University
     year: Expected 2023
   - course: BS in Psychology
@@ -42,4 +42,4 @@ superuser: true
 bio:
 ---
 
-This site is for sharing my projects and interests with future employers and collaborators. I created this site using R Markdown, Hugo, and Blogdown. As this is my first site, I am open to all feedback and comments. Feel free to reach out!
+This site is for sharing my projects and interests with future employers and collaborators. I created this site using R Markdown, Hugo, and Blogdown. Feel free to reach out!
