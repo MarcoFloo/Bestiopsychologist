@@ -62,6 +62,12 @@ Conducting a hierarchical regression analysis in human resources requires severa
 
 I conducted three-stage hierarchical multiple regression was conducted with job performance as the dependent variable. Critical thinking score was entered at stage one of the regression (i.e., Model 1), conscientiousness score at stage two (i.e., Model 2), and a work sample at stage three (i.e., Model 3), based on the correlations between the three predictors and job performance.  
 
+Here is the Scale Graph for the data with a line of best fit:
+
+![screen reader text](Scale.jpg "Scale Graph")
+
+
+
 **The Data:**
 
 | C_ID | PM   | CONS | INT  | WS   |
@@ -243,6 +249,8 @@ I conducted three-stage hierarchical multiple regression was conducted with job 
 | 556  | 3.67 | 3.67 | 3.4  | 3.1  |
 | 557  | 2.73 | 2.96 | 3.15 | 3.2  |
 
+
+
 Prior to conducing the hierarchical multiple regression, the relevant assumptions of this 
 statistical analysis were tested.  As the collinearity statistic (i.e., VIF) was within accepted limits, 
 the assumption of multicollinearity was deemed to have been met (Coakes, 2005; Hair et al., 
@@ -260,7 +268,9 @@ Model 2 explained a significant amount of variance in job performance F(2,173)=1
 
 As the work sample did not provide significant incremental validity, it should not be used in the selection procedure. Structured interview had the largest beta weight, making it the best predictor of the two assessment tools.
 
-**This project was run in {{< icon name="r-project" pack="fab" >}} R (a programming language for statistical computing and graphics) using the following code:**
+
+
+**This project was run in {{< icon name="r-project" pack="fab" >}} (a programming language for statistical computing and graphics) using the following code:**
 
 
 ```R

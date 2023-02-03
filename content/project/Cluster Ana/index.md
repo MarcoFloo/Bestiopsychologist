@@ -200,21 +200,25 @@ The Original K-means cluster:
 
 
 
+
 After using the elbow method, the silhouette method, and the gap statistic method, the graphs showed that the optimal number of clusters was two-four clusters. However, there are only three different species of iris flower. The estimated average silhouette width for the three clusters was 0.55, which indicated that having three clusters is acceptable. 
 
 ![screen reader text](Elbow.jpg "Elbow Method")
 
 
+
 ![screen reader text](Silhoutte.jpg "Silhoutte Method")
+
 
 
 ![screen reader text](Gap.jpg "Gap Statistic Method")
 
 
 
+
 The cluster plot also indicated that three clusters are sufficiently separate, and the overlapping area is small. A table showing the species along with their cluster assignments was created. The first cluster perfectly matched the first species. The second cluster is also acceptable. The third cluster is acceptable, but not as accurate as the first two clusters since it includes cases for the other two species. Overall, the cluster analysis suggests that three clusters is appropriate for the three species data.
 
-**This project was run in {{< icon name="r-project" pack="fab" >}} R (a programming language for statistical computing and graphics) using the following code:**
+**This project was run in {{< icon name="r-project" pack="fab" >}} (a programming language for statistical computing and graphics) using the following code:**
 
 ```R
 dat1<- Data_A6_Task1[, 2:5]
