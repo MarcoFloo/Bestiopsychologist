@@ -39,6 +39,9 @@ There are several ways in which cluster analysis can be used in Human Resources:
 
 I performed a K-means cluster analysis to compare three species of iris flowers (senosa, versicolor, virginica) that were measured in four categories (sepal length/width and pedal length/width) with generated clusters. 
 
+The Original K-means cluster: ![screen reader text](K-means.jpg "K-Means")
+
+
 **The Data:**
 
 | ID  | Sepal.Length | Sepal.Width | Petal.Length | Petal.Width | Species    |
