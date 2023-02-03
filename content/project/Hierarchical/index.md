@@ -1,6 +1,6 @@
 ---
 title: Hierarchical Regression
-summary: Hierarchical regression is a way to show if variables of your interest explain a statistically significant amount of variance in your Dependent Variable (DV) after accounting for all other variables.
+summary: Hierarchical regression is a way to model if variables of your interest explain a statistically significant amount of variance in your Dependent Variable (DV) after accounting for all other variables.
 tags:
   - 
 date: '2016-04-27T00:00:00Z'
@@ -30,7 +30,7 @@ Human resource management is one of the key aspects of an organization's success
 
 **What is Hierarchical Regression?**
 
-Hierarchical regression is a statistical model that analyzes the relationship between a dependent variable and several independent variables, taking into account the relationship between these variables. It is a type of multiple regression that allows for the examination of complex relationships between variables, taking into account their hierarchical nature. The hierarchical nature of the model allows researchers to identify the unique impact of each predictor on the dependent variable, while controlling for the effects of other predictors.
+Hierarchical regression is a statistical model that analyzes the relationship between a dependent variable and several independent variables, taking into account the relationship between these variables. It is a type of multiple regression that allows for the examination of complex relationships between variables. The hierarchical nature of the model allows researchers to identify the unique impact of each predictor on the dependent variable, while controlling for the effects of other predictors.
 
 **Why Use Hierarchical Regression in Human Resources?**
 
@@ -60,9 +60,9 @@ Conducting a hierarchical regression analysis in human resources requires severa
 
 **My Experience**
 
-I conducted three-stage hierarchical multiple regression was conducted with job performance as the dependent variable. Critical thinking score was entered at stage one of the regression (i.e., Model 1), conscientiousness score at stage two (i.e., Model 2), and a work sample at stage three (i.e., Model 3), based on the correlations between the three predictors and job performance.  
+I conducted a three-stage hierarchical multiple regression with job performance as the dependent variable. Critical thinking score was entered at stage one of the regression (i.e., Model 1), conscientiousness score at stage two (i.e., Model 2), and a work sample at stage three (i.e., Model 3), based on the correlations between the three predictors and job performance.  
 
-Here is the Scale Graph for the data with a line of best fit:
+**Scale Graph for the data with a line of best fit:**
 
 ![screen reader text](Scale.jpg "Scale Graph")
 
@@ -313,4 +313,4 @@ summary(m2S)
 
 **Conclusion**
 
-Hierarchical regression is a powerful statistical technique for analyzing employee data in human resources. By taking into account the relationship between variables, it allows researchers to identify the unique impact of each predictor on the dependent variable, while controlling for the effects of other predictors. When conducting a hierarchical regression analysis in human resources, it is important to define the dependent and independent variables, collect accurate data, choose the appropriate hierarchical model, and interpret the results appropriately
+Hierarchical regression is a powerful statistical technique for analyzing employee data in human resources. By taking into account the relationship between variables, it allows researchers to identify the unique impact of each predictor on the dependent variable, while controlling for the effects of other predictors. When conducting a hierarchical regression analysis in Human Resources, it is important to define the dependent and independent variables, collect accurate data, choose the appropriate hierarchical model, and interpret the results appropriately
