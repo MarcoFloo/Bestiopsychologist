@@ -247,7 +247,9 @@ Prior to conducing the hierarchical multiple regression, the relevant assumption
 statistical analysis were tested.  As the collinearity statistic (i.e., VIF) was within accepted limits, 
 the assumption of multicollinearity was deemed to have been met (Coakes, 2005; Hair et al., 
 1998).  Residual and scatter plots indicated the assumptions of normality, linearity and 
-homoscedasticity were all satisfied (Hair et al., 1998; Pallant, 2001).    
+homoscedasticity were all satisfied (Hair et al., 1998; Pallant, 2001).
+
+![screen reader text](QQ.jpg "Normality Test")
 
 
 The regression statistic in Table 1. Model 1 was significant: F(1,174)=19.50. p<.001. Adding conscientiousness (i.e., Model 2) to the regression model explained 4% of the variance, which is the incremental validity of CONS. The change in R^2 was significant F(1, 173)= 7.85,p=.01. Adding a work sample (i.e model 3) did not contribute a significant change in R^2, and therefore did not contribute to significant incremental validity. Model 2 showed the smallest AIC and BIC, meaning this was the best model. 
@@ -258,7 +260,7 @@ Model 2 explained a significant amount of variance in job performance F(2,173)=1
 
 As the work sample did not provide significant incremental validity, it should not be used in the selection procedure. Structured interview had the largest beta weight, making it the best predictor of the two assessment tools.
 
-**This project was run in R (a programming language for statistical computing and graphics) using the following code:**
+**This project was run in {{< icon name="r-project" pack="fab" >}} R (a programming language for statistical computing and graphics) using the following code:**
 
 
 ```R

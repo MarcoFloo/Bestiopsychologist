@@ -214,10 +214,9 @@ After using the elbow method, the silhouette method, and the gap statistic metho
 
 The cluster plot also indicated that three clusters are sufficiently separate, and the overlapping area is small. A table showing the species along with their cluster assignments was created. The first cluster perfectly matched the first species. The second cluster is also acceptable. The third cluster is acceptable, but not as accurate as the first two clusters since it includes cases for the other two species. Overall, the cluster analysis suggests that three clusters is appropriate for the three species data.
 
-**This project was run in R (a programming language for statistical computing and graphics) using the following code:**
+**This project was run in {{< icon name="r-project" pack="fab" >}} R (a programming language for statistical computing and graphics) using the following code:**
 
 ```R
-# Example of code highlighting
 dat1<- Data_A6_Task1[, 2:5]
 
 fviz_nbclust(dat1, kmeans, method ="wss")+
