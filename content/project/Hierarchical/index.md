@@ -40,6 +40,15 @@ In human resources, hierarchical regression can be used to study employee attitu
 
 Conducting a hierarchical regression analysis in human resources requires several steps:
 
+```mermaid
+graph TD;
+Define the dependent variable and independent variables: The dependent variable is the outcome that the researcher wants to explain, and the independent variables are the predictors of the dependent variable-->Collect the data: Employee data can be collected through surveys, interviews, or observation;
+Collect the data: Employee data can be collected through surveys, interviews, or observation.-->Clean the data: The data collected must be cleaned to ensure that it is accurate and usable for analysis;
+Choose the appropriate hierarchical model: A hierarchical model must be chosen based on the nature of the data and the research questions-->Conduct the regression analysis: The regression analysis is performed using statistical software, such as SPSS or R;
+Conduct the regression analysis: The regression analysis is performed using statistical software, such as SPSS or R-->Interpret the results: The results of the regression analysis must be interpreted to understand the relationship between the dependent variable and the independent variables;
+```
+
+
 1.Define the dependent variable and independent variables: The dependent variable is the outcome that the researcher wants to explain, and the independent variables are the predictors of the dependent variable.
 
 
@@ -59,7 +68,7 @@ Conducting a hierarchical regression analysis in human resources requires severa
 
 **My Experience**
 
-As an example from my class: A three-stage hierarchical multiple regression was conducted with job performance as the dependent variable. Critical thinking score was entered at stage one of the regression (i.e., Model 1), conscientiousness score at stage two (i.e., Model 2), and a work sample at stage three (i.e., Model 3), based on the correlations between the three predictors and job performance.  
+I conducted three-stage hierarchical multiple regression was conducted with job performance as the dependent variable. Critical thinking score was entered at stage one of the regression (i.e., Model 1), conscientiousness score at stage two (i.e., Model 2), and a work sample at stage three (i.e., Model 3), based on the correlations between the three predictors and job performance.  
 
 **The Data:**
 
