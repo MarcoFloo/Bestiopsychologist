@@ -313,4 +313,4 @@ summary(m2S)
 
 **Conclusion**
 
-Hierarchical regression is a powerful statistical technique for analyzing employee data in human resources. By taking into account the relationship between variables, it allows researchers to identify the unique impact of each predictor on the dependent variable, while controlling for the effects of other predictors. When conducting a hierarchical regression analysis in Human Resources, it is important to define the dependent and independent variables, collect accurate data, choose the appropriate hierarchical model, and interpret the results appropriately
+Hierarchical regression is a powerful statistical technique for analyzing employee data in human resources. By taking into account the relationship between variables, it allows researchers to identify the unique impact of each predictor on the dependent variable, while controlling for the effects of other predictors. When conducting a hierarchical regression analysis in Human Resources, it is important to define the dependent and independent variables, collect accurate data, choose the appropriate hierarchical model, and interpret the results appropriately.
