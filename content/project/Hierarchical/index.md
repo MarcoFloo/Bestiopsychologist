@@ -298,42 +298,6 @@ m2S <- lm(PM ~ INT + CONS, data=dat2)
 summary(m2S)
 ```
 
-dat1<-Data_A7
-
-cor(dat1[, 2:5], use="pairwise.complete.obs")
-
-options(scipen=15)
-
-m1 <- lm(PM ~ INT, data=dat1)                       # Model 1
-
-m2 <- lm(PM ~ INT + CONS, data=dat1)                  # Model 2
-
-m3 <- lm(PM ~ INT + CONS + WS, data=dat1)           # Model 3
-
-vif(m3)                                                      ## VIF should be less than 10
-plot(m3)
-
-anova(m1, m2, m3)
-
-glance(m1)                                     # To see AIC & BIC for model 1
-glance(m2)                                     # To see AIC & BIC for model 2
-glance(m3)
-
-summary(m1)                                                  ## show the result
-summary(m2)                                                  ## show the result
-summary(m3)                                                  ## show the result
-
-RS_change<-(summary(m2)$r.squared)-(summary(m1)$r.squared)
-RS_change
-
-dat2 <- scale(dat1[, 2:5])                                    ## transform to z-scores
-
-dat2 <- data.frame(dat2)
-
-m2S <- lm(PM ~ INT + CONS, data=dat2)
-summary(m2S)
-
-
 
 **Conclusion**
 
