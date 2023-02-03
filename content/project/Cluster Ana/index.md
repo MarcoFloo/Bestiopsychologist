@@ -39,7 +39,8 @@ There are several ways in which cluster analysis can be used in Human Resources:
 
 I performed a K-means cluster analysis to compare three species of iris flowers (senosa, versicolor, virginica) that were measured in four categories (sepal length/width and pedal length/width) with generated clusters. 
 
-The Original K-means cluster: ![screen reader text](K-means.jpg "K-Means")
+The Original K-means cluster: 
+![screen reader text](K-means.jpg "K-Means")
 
 
 **The Data:**
@@ -198,7 +199,18 @@ The Original K-means cluster: ![screen reader text](K-means.jpg "K-Means")
 | 150 | 5.9          | 3           | 5.1          | 1.8         | virginica  |
 
 
+
 After using the elbow method, the silhouette method, and the gap statistic method, the graphs showed that the optimal number of clusters was two-four clusters. However, there are only three different species of iris flower. The estimated average silhouette width for the three clusters was 0.55, which indicated that having three clusters is acceptable. 
+
+![screen reader text](Elbow meth.jpg "Elbow Method")
+
+
+![screen reader text](Silhoutte.jpg "Silhoutte Method")
+
+
+![screen reader text](Gap Stat.jpg "Gap Statistic Method")
+
+
 
 The cluster plot also indicated that three clusters are sufficiently separate, and the overlapping area is small. A table showing the species along with their cluster assignments was created. The first cluster perfectly matched the first species. The second cluster is also acceptable. The third cluster is acceptable, but not as accurate as the first two clusters since it includes cases for the other two species. Overall, the cluster analysis suggests that three clusters is appropriate for the three species data.
 
