@@ -216,6 +216,28 @@ The cluster plot also indicated that three clusters are sufficiently separate, a
 
 **This project was run in R (a programming language for statistical computing and graphics) using the following code:**
 
+```R
+# Example of code highlighting
+dat1<- Data_A6_Task1[, 2:5]
+
+fviz_nbclust(dat1, kmeans, method ="wss")+
+  geom_vline(xintercept=5, linetype=2)        
+
+fviz_nbclust(dat1, kmeans, method = "silhouette")
+
+fviz_nbclust(dat1, kmeans, method = "gap_stat")
+
+km.res<-eclust(dat1, "kmeans", k=3, nstart=25, graph = TRUE)     
+km.res
+
+dat2<-cbind(dat1, cluster=km.res$cluster)
+
+fviz_silhouette(km.res, palette="jco", ggtheme=theme_classic())
+
+table(dat2$Species, dat2cluster)
+write.csv(dat2,"cluster_assign.csv")
+```
+
 
 dat1<- Data_A6_Task1[, 2:5]
 
