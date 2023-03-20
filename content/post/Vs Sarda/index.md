@@ -104,4 +104,4 @@ White's bishop on c4 is now attacking Black's king, and Black pushes their g-paw
 
 **Here is a gif of the entire game:**
 
-![Alt text for my gif](/assets/media/board.gif)
+![Full Game](media/board.gif)
