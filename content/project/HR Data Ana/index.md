@@ -29,11 +29,11 @@ slides: ''
 
 
 
-**Logistic Regression:** a popular statistical technique used in the field of Human Resources to predict the likelihood of a certain event happening. In HR, logistic regression is commonly used for employee attrition.
+**Logistic Regression:** A popular statistical technique used in the field of Human Resources to predict the likelihood of a certain event happening. In HR, logistic regression is commonly used for employee attrition.
 
-**Correlation Matrix:** A correlation matrix is a table which displays the correlation coefficients for different variables. The matrix depicts the correlation between all the possible pairs of values in a table.
+**Correlation Matrix:** A correlation matrix is a table which displays the correlation coefficients for different variables. The matrix depicts the correlation between all the possible pairs of variables in a table.
 
-**Confusion Matrix:** In the field of machine learning (specifically the problem of statistical classification) a confusion matrix is a specific table layout that allows visualization of the performance of an algorithm.
+**Confusion Matrix:** In the field of machine learning (specifically the problem of statistical classification), a confusion matrix is a specific table layout that allows visualization of the performance of an algorithm.
 
 **AUC Curve:**  A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. AUC stands for "Area under the ROC Curve." AUC measures the entire two-dimensional area underneath the ROC curve.
 
@@ -48,7 +48,7 @@ One of the key features of the IBM HR data analytics set is the ability to track
 **My Contribution**
 {style="color: green"}
 
-Ultimately our goal is to create a model to predict
+Ultimately, our goal is to create a model to predict
 whether an employee will turnover. Logistic regression is a statistical technique that
 can differentiate which factors are significant with a dichotomous outcome (e.g.,
 to leave or to stay). Adding machine learning techniques then allows us to understand the
@@ -59,28 +59,28 @@ strength of our predictive model in in a more exact fashion.
 
 ![screen reader text](VIF1.jpg "VIF 1")
 
-**VIF:** After categorizing and splitting our data, we should check if multicollinearity is
+**VIF:** After categorizing and splitting our data, we should check if multi-collinearity is
 occurring between our input variables. The Variance Inflation Factor is a technique
 which creates a linear model with 1 dependent variable against multiple independent
 variables.
 
 We can see that “Job Level” produces the highest VIF score of 8.45, so we should
 eliminate it. Normally a VIF score of 10 or higher serves as the cutoff. However, this
-removal will increase the precision of our other independent variables and increases the
+removal increases both the precision of our other independent variables and the
 overall statistical power of our model.
 
 ![screen reader text](VIF2.jpg "VIF 2")
 
 
 After removing “Job Level” from the data set, we can now see that none of our VIF
-scores are close to approaching 10. We then take a look at turn over at a glace in our next figure.
+scores are close to approaching 10. We then take a glance at turn over in our next figure.
 
 
 ![screen reader text](1.jpg "Turn Over Glance")
 
 
-Overall, about 84% of the workforce stayed while about 16% left. We can visually see
-this is a moderately imbalanced dataset. Knowing our dataset is skewed (not normally
+Overall, roughly 84% of the workforce stayed while 16% left. We can see
+this is a moderately imbalanced data set. Knowing our data set is skewed (not normally
 distributed) helps us determine what further analyses to conduct.
 
 
@@ -95,8 +95,8 @@ both our employees and the organization. We then move to a figure comparing coho
 ![screen reader text](3.jpg "Cohort Breakdown")
 
 **Age cohorts:** Gen-Z workers show the highest frequency of turnover rate at
-around 36%- most likely to pursue other career opportunities. Boomers have the
-next highest proportion of employees leaving at 17%- most likely to retire.
+around 36% - most likely to pursue other career opportunities. Boomers have the
+next highest proportion of turnover at 17% - most likely due to retirement.
 
  
 **Income:** It seems that employees who left were paid less on average than those
@@ -105,7 +105,7 @@ and Development departments. (HR should know better!)
 
 
 
-Here I use use R to create a correlation matrix. This feature can help us quickly visualize the strongest
+Here I use {{< icon name="r-project" pack="fab" >}} to create a correlation matrix. This feature can help us quickly visualize the strongest
 relationships.
 What we see:
 
@@ -119,7 +119,7 @@ What we see:
 
 2. The higher the job level, the higher the total working years (r=.78).
 
-3. The higher the percent salary hike, the higher the performance (rating r=.77).
+3. The higher the percent salary hike, the higher the performance rating (r=.77).
 
 4. The higher the total working years, the higher the monthly income (r=.77).
 
@@ -140,7 +140,7 @@ negatives.
 
 Overall, our model shows that from 294 example cases, 237 were correctly predicted to stay and
 14 were correctly predicted to leave. 36 were falsely predicted to stay and 7 were falsely
-predicted to leave. Compared to the data set, our produced, linear model holds an impressive 85%
+predicted to leave. Compared to the data set, our linear model holds an impressive 85%
 accuracy rating.
 
 ![screen reader text](ROC.jpg "ROC")
@@ -152,7 +152,7 @@ insufficient. Receiver Operating Characteristic Curve (ROC curves) plot true pos
 [TP/(TP + FN)], which is the percentage of terms who were accurately classified as such, and we
 want to maximize (i.e., sensitivity), against false positive rates [FP/(TN + FP)], which is the
 percentage of non-terms who were classified as terms, and we want to minimize. We can
-determine its strength by looking at the are under the ROC curve or AUC. The higher our AUC,
+determine its strength by looking at the area under the ROC curve or AUC. The higher our AUC,
 the better our model is classifying turnover as staying (1 as 1) and leaving (0 as 0).
 
 **Top Reasons For Leaving:**
@@ -160,9 +160,9 @@ the better our model is classifying turnover as staying (1 as 1) and leaving (0 
 
 1. Monthly income.
 
-2. Longer Hours
+2. Longer Hours.
 
-3. Lack Of Tenure
+3. Lack Of Tenure.
 
 
 **Recommendations:** 
@@ -184,7 +184,7 @@ provide additional insight for which factors keep employees at the organization.
 **Conclusion** 
 {style="color: green"}
 
-HR professionals, managers, and C-Suite members generally believed seeking a higher incom is a key motivator for employees quitting when turnover is high. Our analysis seem to support this belief at first, but closer inspection allows us to draw deeper insights. In this
+HR professionals, managers, and C-Suite members generally believed seeking a higher income is a key motivator for employees quitting when turnover is high. Our analysis seems to support this belief at first, but closer inspection allows us to draw deeper insight. In this
 organization’s case, working overtime was more impactful than raises in retaining incumbents. Increasing salaries may work in the immediate to reduce turnover, but it is a situational fix that should be applied conservatively. Addressing the other significant variables could provide a more cost-effective and pragmatic solution. Overall, using advanced statistical modeling created a better judgment of
 employees’ behavior to predict attrition.
 
