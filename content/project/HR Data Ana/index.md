@@ -1,5 +1,5 @@
 ---
-title: HR Data Analytics Turnover
+title: Understanding Turnover From The IBM HR Data set
 tags:
   -    
 date: '2016-04-27T00:00:00Z'
@@ -33,13 +33,13 @@ Correlation Matrix: A correlation matrix is a table which displays the correlati
 
 Confusion Matrix: In the field of machine learning (specifically the problem of statistical classification) a confusion matrix is a specific table layout that allows visualization of the performance of an algorithm.
 
-AUC Curve:  A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. AUC stands for "Area under the ROC Curve." AUC measures the entire two-dimensional area underneath the entire ROC curve.
+AUC Curve:  A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. AUC stands for "Area under the ROC Curve." AUC measures the entire two-dimensional area underneath the ROC curve.
 
 Ultimately our goal is to create a model to predict
 whether an employee will turnover. Logistic regression is a statistical technique that
 can differentiate which factors are significant with a dichotomous outcome (e.g.,
 to leave or to stay). Adding machine learning techniques then allows us to understand the
-strength of our predictive modelin in a more exact fashion`.
+strength of our predictive model in in a more exact fashion`.
 
 
 
