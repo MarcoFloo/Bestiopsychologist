@@ -45,7 +45,8 @@ strength of our predictive model in in a more exact fashion`.
 
 
 
-**HR Data Analytics Project: Background** {style="color: green"}
+**HR Data Analytics Project: Background** 
+{style="color: green"}
 
 IBM has made a significant contribution to the field of Human Resources by launching an innovative HR data analytics set. This set provides companies with a wealth of information about their employees, enabling them to make informed decisions about their workforce.
 
@@ -54,6 +55,7 @@ One of the key features of the IBM HR data analytics set is the ability to track
 Another important aspect of the IBM HR data analytics set is the ability to track employee engagement. Employee engagement is a critical factor in the success of any organization, and the data provided by the analytics set can help companies to understand the level of engagement among their workforce. This information can be used to identify areas where engagement may be lacking, and to develop strategies to improve employee engagement and job satisfaction.
 
 **My Contribution**
+{style="color: green"}
 
 The ultimate goal is to create a model to predict
 whether an employee will quit or stay. Logistic regression is a statistical technique that
@@ -70,7 +72,8 @@ Is there a wage gap? It seems both overall and among departments that there are 
 major differences of the monthly average income between genders. This is good news for
 both our employees and the organization!
 
-**Key Insights** {style="color: green"}
+**Key Insights** 
+{style="color: green"}
 
 o Age cohorts: Gen-Z workers show the highest frequency of turnover rate at
 around 36%- most likely to pursue other career opportunities. Boomers have the
@@ -123,7 +126,8 @@ overall statistical power of our model.
 -After removing “Job Level” from the data set, we can now see that none of our VIF
 scores are close to approaching 10. Let’s create our final model!
 
-**Interpreting the Model:** {style="color: green"}
+**Interpreting the Model:** 
+{style="color: green"}
 
 Let’s use machine learning to further evaluate our logistic regression model.
 A Confusion Matrix is a classification model, using supervised learning, that allows us to
@@ -155,7 +159,8 @@ the better our model is classifying turnover as staying (1 as 1) and leaving (0 
 -Lack Of Tenure
 
 
-**Recommendations:** {style="color: green"}
+**Recommendations:** 
+{style="color: green"}
 
 1. Companies may consider pay raises to increase retention. Although we don’t know this
 organization’s overtime policy, either limiting the amount of mandatory overtime or increasing its
@@ -170,7 +175,8 @@ important to understand why employees stay. Deploying an engagement survey can
 provide additional insight for which factors keep employees at the organization.
 
 
-**Conclusion** {style="color: green"}
+**Conclusion** 
+{style="color: green"}
 
 HR professionals, managers, and C-Suite members generally believed seeking a higher incom is a key motivator for employees quitting when turnover is high. Our analysis seem to support this belief at first, but closer inspection allows us to draw deeper insights. In this
 organization’s case, working overtime was more impactful than raises in retaining incumbents. Increasing salaries may work in the immediate to reduce turnover, but it is a situational fix that should be applied conservatively. Addressing the other significant variables could provide a more cost-effective and pragmatic solution. Overall, using advanced statistical modeling created a better judgment of
