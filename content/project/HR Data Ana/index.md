@@ -24,7 +24,9 @@ url_video: ''
 slides: ''
 ---
 
-**Analysis Used: Background**
+**Analysis Used: Background** Red colored text
+{style="color: green"}
+
 
 
 Logistic Regression: a popular statistical technique used in the field of Human Resources to predict the likelihood of a certain event happening. In HR, logistic regression is commonly used for employee attrition.
