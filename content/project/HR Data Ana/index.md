@@ -1,5 +1,5 @@
 ---
-title: HR Data Analytics: Turnover
+title: HR Data Analytics Turnover
 tags:
   -    
 date: '2016-04-27T00:00:00Z'
