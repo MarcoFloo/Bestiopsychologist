@@ -24,7 +24,7 @@ url_video: ''
 slides: ''
 ---
 
-**Analysis Used: Background**
+**About Analysis Used**
 {style="color: green"}
 
 
@@ -38,14 +38,12 @@ Confusion Matrix: In the field of machine learning (specifically the problem of 
 AUC Curve:  A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. AUC stands for "Area under the ROC Curve." AUC measures the entire two-dimensional area underneath the ROC curve.
 
 
-**HR Data Analytics Project: Background** 
+**About HR Data Analytics Project** 
 {style="color: green"}
 
 IBM has made a significant contribution to the field of Human Resources by launching an innovative HR data analytics set. This set provides companies with a wealth of information about their employees, enabling them to make informed decisions about their workforce.
 
 One of the key features of the IBM HR data analytics set is the ability to track employee performance over time. This information is crucial for companies to understand how their employees are performing and where they may need to focus their development efforts. The data can be used to identify trends and patterns in employee performance, helping companies to identify areas for improvement and to better allocate resources.
-
-Another important aspect of the IBM HR data analytics set is the ability to track employee engagement. Employee engagement is a critical factor in the success of any organization, and the data provided by the analytics set can help companies to understand the level of engagement among their workforce. This information can be used to identify areas where engagement may be lacking, and to develop strategies to improve employee engagement and job satisfaction.
 
 **My Contribution**
 {style="color: green"}
@@ -54,7 +52,10 @@ Ultimately our goal is to create a model to predict
 whether an employee will turnover. Logistic regression is a statistical technique that
 can differentiate which factors are significant with a dichotomous outcome (e.g.,
 to leave or to stay). Adding machine learning techniques then allows us to understand the
-strength of our predictive model in in a more exact fashion`.
+strength of our predictive model in in a more exact fashion.
+
+![screen reader text](regression.jpg "Regression Result")
+
 
 -VIF: After categorizing and splitting our data, we should check if multicollinearity is
 occurring between our input variables. The Variance Inflation Factor is a technique
