@@ -1,6 +1,5 @@
 ---
-title: HR Data Analytics: Turnover
-summary: Logistic Regression is a type of machine learning algorithm that is used to predict/forecast variables that vary in numerical nature. Here I use it (and other methods) on real world data from the IBM HR Data Analytics set.
+title:
 tags:
   -    
 date: '2016-04-27T00:00:00Z'
