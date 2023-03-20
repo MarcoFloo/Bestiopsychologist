@@ -136,9 +136,11 @@ corner shows the number of false positives (Type 1 error) the bottom left corner
 number of false negatives (Type 2 Error), and the bottom right corner shows the number of true
 negatives.
 
+![screen reader text](confusion.jpg "Confusion Matrix")
+
 Overall, our model shows that from 294 example cases, 237 were correctly predicted to stay and
 14 were correctly predicted to leave. 36 were falsely predicted to stay and 7 were falsely
-predicted to leave. Compared to the dataset, our produced, linear model holds an impressive 85%
+predicted to leave. Compared to the data set, our produced, linear model holds an impressive 85%
 accuracy rating.
 
 Since the data set is moderately imbalanced, relying on a model’s accuracy measure is
