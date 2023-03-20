@@ -47,83 +47,83 @@ d4 d5
 The game starts with the Queen's Pawn Opening. Both players are occupying the center with our pawns.
 
 Nf3 Bg4
-White develops their knight to a natural square, while Black brings out their bishop to attack White's knight.
+I develop my knight to a natural square, while Black brings out their bishop to attack my knight.
 
 h3 Bxf3
-White forces Black to capture their knight with the bishop, which loses a tempo for Black since they now have to move their bishop twice in the opening.
+I force Black to capture  knigmyht with the bishop, which loses a tempo for Black since they now have to move their bishop twice in the opening.
 
 exf3 a6
-White decides to keep the pawn structure intact by playing exf3 instead of capturing with the pawn. Black continues with a pawn move to prepare for b5.
+I decide to keep the pawn structure intact by playing exf3 instead of capturing with the pawn. Black continues with a pawn move to prepare for b5.
 
 c4 dxc4
-White gains space in the center by advancing their c-pawn and offers a pawn exchange. Black accepts the exchange, which opens up the d-file for White.
+I gain space in the center by advancing my c-pawn which offers a pawn exchange. Black accepts the exchange, which opens up the d-file for White.
 ![screen reader text](chess2.jpg "Queen's Pawn Opening: Anti-Torre Attack")
 
 Bxc4 Nc6
-White develops their bishop to attack Black's pawn on d5. Black responds with a knight move that also attacks White's pawn on e4.
+I develop my bishop to attack Black's pawn on d5. Black responds with a knight move that also attacks White's pawn on e4.
 
 Be3 Qd6
-White brings their queen out early to attack Black's pawn on d4. Black moves their queen to d6 to defend the pawn and connect the rooks.
+I bring my queen out early to attack Black's pawn on d4. Black moves their queen to d6 to defend the pawn and connect the rooks.
 
 Nc3 Nf6
-White develops their knight to a good square, attacking Black's pawn on e5. Black defends the pawn with the knight.
+I develop My knight to a good square, attacking Black's pawn on e5. Black defends the pawn with the knight.
 
 O-O e6
-White castles to safety, and Black develops their bishop to e7 to prepare for castling.
+I castles to safety, and Black develops their bishop to e7 to prepare for castling.
 
 a3 h6
-White prepares to push the b-pawn with a3 to prevent Black from playing b5. Black prepares to defend their g7-pawn with h6.
+I prepare to push the b-pawn with a3 to prevent Black from playing b5. Black prepares to defend their g7-pawn with h6.
 ![screen reader text](chess3.jpg "Middle Game Beginning")
 
 Rc1 Be7
-White develops their rook to the semi-open c-file, while Black continues to develop their pieces.
+I develop my rook to the semi-open c-file, while Black continues to develop their pieces.
 
 Ba2 O-O-O
-White moves their bishop to a safe square, and Black castles queenside, which could be risky since their king is now exposed.
+I move my bishop to a safe square, and Black castles queenside, which could be risky since their king is now exposed.
 
 Ne4 Qd7
-White moves their knight to a good square, attacking Black's pawn on d5 again. Black moves their queen back to d7 to defend the pawn.
+I move my knight to a good square, attacking Black's pawn on d5 again. Black moves their queen back to d7 to defend the pawn.
 
 Nc5 Qe8
-White attacks Black's pawn on a6 and forces Black to move their queen again.
+I attack Black's pawn on a6 and forces Black to move their queen again.
 
 Qb3 Bxc5
-White threatens checkmate on b7 and forces Black to capture the bishop with their pawn.
+I threaten checkmate on b7 and forces Black to capture the bishop with their pawn.
 ![screen reader text](chess4.jpg "Cohort Breakdown")
 
 Rxc5 Nd5
-White doubles their rooks on the c-file and Black brings their knight to a good square, attacking White's pawn on c5.
+I double my rooks on the c-file and Black brings their knight to a good square, attacking White's pawn on c5.
 
 Rfc1 g5
-White continues to put pressure on Black's position with the rook on c1, and Black pushes their g-pawn to attack White's knight on f3.
+I continue to put pressure on Black's position with the rook on c1, and Black pushes their g-pawn to attack White's knight on f3.
 
 Qa4 Rd6
-White attacks Black's pawn on a6 again, and Black moves their rook to d6 to defend the pawn and prepare for the doubling of the rooks on the d-file.
+I attack Black's pawn on a6 again, and Black moves their rook to d6 to defend the pawn and prepare for the doubling of the rooks on the d-file.
 
 ![screen reader text](chess5.jpg "Middle Game Continued")
 
 b4 Nxe3
-White sacrifices their b-pawn to open up the b-file and put pressure on Black's position. Black captures the pawn with their knight, which is now on an active square.
+I sacrifice my b-pawn to open up the b-file and put pressure on Black's position. Black captures the pawn with their knight, which is now on an active square.
 
 fxe3 f5
-White continues to put pressure on Black's position with the pawn on f3 and the rook on c5, while Black pushes their f-pawn to create counterplay.
+I continue to put pressure on Black's position with the pawn on f3 and the rook on c5, while Black pushes their f-pawn to create counterplay.
 
 Bc4 g4
-White's bishop on c4 is now attacking Black's king, and Black pushes their g-pawn to create threats on White's king
+My bishop on c4 is now attacking Black's king, and Black pushes their g-pawn to create threats on White's king
 
 Bxa6 gxf3
-White sacrifices their bishop to potentially create some attacking chances. Black captures the bishop with their pawn.
+I sacrifice my bishop to potentially create some attacking chances. Black captures the bishop with their pawn.
 
 Bxb7+ Kxb7
 ![screen reader text](brilliant3.jpg "Brilliant Move")
-White attacks Black's king with their bishop, forcing Black to move their king to a better square.This move has several important features that make it brilliant. First, it creates a double attack on Black's king and queen, as the bishop is now threatening to capture the queen on b7, while also opening up a diagonal for White's queen to enter the attack. Second, it removes Black's powerful rook from the board, which was controlling the d-file and potentially threatening to infiltrate White's position. Third, it creates a pawn on b7 that can become a powerful passed pawn if White can advance it down the board.
+I attack Black's king with my bishop, forcing Black to move their king to a better square.This move has several important features that make it brilliant. First, it creates a double attack on Black's king and queen, as the bishop is now threatening to capture the queen on b7, while also opening up a diagonal for my queen to enter the attack. Second, it removes Black's powerful rook from the board, which was controlling the d-file and potentially threatening to infiltrate White's position. Third, it creates a pawn on b7 that can become a powerful passed pawn if I can advance it down the board.
 
-Black can capture the bishop with their king, but this would expose the king to a dangerous attack, as White's queen and remaining bishop are well-placed to coordinate an assault. Alternatively, Black can capture with their queen, but this would also be risky, as White's queen can then swing over to the king side and continue the attack. Ultimately, Black chose to play Kc8, which allowed White to play Qb6 and win the rook on a8, further consolidating White's advantage.
+Black can capture the bishop with their king, but this would expose the king to a dangerous attack, as my queen and remaining bishop are well-placed to coordinate an assault. Alternatively, Black can capture with their queen, but this would also be risky, as White's queen can then swing over to the king side and continue the attack. Ultimately, Black chose to play Kc8, which allowed me to play Qb6 and win the rook on a8, further consolidating my advantage.
 
 Qb5+ Kc8
-White attacks Black's king with their queen, forcing Black to move their king to the c8 square.
+I attacks Black's king with their queen, forcing Black to move their king to the c8 square.
 
-Overall, this was a very interesting game with both players creating some counter play on both sides of the board. White's pawn sacrifice on move 22 was particularly noteworthy, potentially creating some attacking chances on the king-side. This game ended with my win a few moves later.
+Overall, this was a very interesting game with both players creating some counter play on both sides of the board. My pawn sacrifice on move 22 was particularly noteworthy, potentially creating some attacking chances on the king-side. This game ended with my win a few moves later.
 
 **Here is a gif of the entire game:**
 
