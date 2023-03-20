@@ -29,13 +29,13 @@ slides: ''
 
 
 
-Logistic Regression: a popular statistical technique used in the field of Human Resources to predict the likelihood of a certain event happening. In HR, logistic regression is commonly used for employee attrition.
+**Logistic Regression:** a popular statistical technique used in the field of Human Resources to predict the likelihood of a certain event happening. In HR, logistic regression is commonly used for employee attrition.
 
-Correlation Matrix: A correlation matrix is a table which displays the correlation coefficients for different variables. The matrix depicts the correlation between all the possible pairs of values in a table.
+**Correlation Matrix:** A correlation matrix is a table which displays the correlation coefficients for different variables. The matrix depicts the correlation between all the possible pairs of values in a table.
 
-Confusion Matrix: In the field of machine learning (specifically the problem of statistical classification) a confusion matrix is a specific table layout that allows visualization of the performance of an algorithm.
+**Confusion Matrix:** In the field of machine learning (specifically the problem of statistical classification) a confusion matrix is a specific table layout that allows visualization of the performance of an algorithm.
 
-AUC Curve:  A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. AUC stands for "Area under the ROC Curve." AUC measures the entire two-dimensional area underneath the ROC curve.
+**AUC Curve:**  A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. AUC stands for "Area under the ROC Curve." AUC measures the entire two-dimensional area underneath the ROC curve.
 
 
 **About HR Data Analytics Project** 
@@ -59,7 +59,7 @@ strength of our predictive model in in a more exact fashion.
 
 ![screen reader text](VIF1.jpg "VIF 1")
 
-VIF: After categorizing and splitting our data, we should check if multicollinearity is
+**VIF:** After categorizing and splitting our data, we should check if multicollinearity is
 occurring between our input variables. The Variance Inflation Factor is a technique
 which creates a linear model with 1 dependent variable against multiple independent
 variables.
@@ -81,27 +81,25 @@ scores are close to approaching 10. We then take a look at turn over at a glace 
 
 Overall, about 84% of the workforce stayed while about 16% left. We can visually see
 this is a moderately imbalanced dataset. Knowing our dataset is skewed (not normally
-distributed) helps us determine what further analyses we can conduct.
+distributed) helps us determine what further analyses to conduct.
 
 
 ![screen reader text](2.jpg "Gender Comparison")
 
 Is there a wage gap? It seems both overall and among departments that there are no
 major differences of the monthly average income between genders. This is good news for
-both our employees and the organization.
-
-**Key Insights** 
-{style="color: green"}
+both our employees and the organization. We then move to a figure comparing cohorts.
 
 
-![screen reader text](3.jpg "Gender Comparison")
 
-Age cohorts: Gen-Z workers show the highest frequency of turnover rate at
+![screen reader text](3.jpg "Cohort Breakdown")
+
+**Age cohorts:** Gen-Z workers show the highest frequency of turnover rate at
 around 36%- most likely to pursue other career opportunities. Boomers have the
 next highest proportion of employees leaving at 17%- most likely to retire.
 
  
-Income: It seems that employees who left were paid less on average than those
+**Income:** It seems that employees who left were paid less on average than those
 who stayed. These differences were most significant within the HR and Research
 and Development departments. (HR should know better!)
 
@@ -111,14 +109,19 @@ Here I use use R to create a correlation matrix. This feature can help us quickl
 relationships, rather than having to look around the entire visual.
 What we see:
 
+![screen reader text](Correlation matrix.jpg "Correlation Matrix")
 
- - The higher the job level, the higher the monthly income (r=.95).
+**Key Insights** 
+{style="color: green"}
 
- - The higher the job level, the higher the total working years (r=.78).
 
- - The higher the percent salary hike, the higher the performance (rating r=.77).
+1. The higher the job level, the higher the monthly income (r=.95).
 
- - The higher the total working years, the higher the monthly income (r=.77).
+2. The higher the job level, the higher the total working years (r=.78).
+
+3. The higher the percent salary hike, the higher the performance (rating r=.77).
+
+4. The higher the total working years, the higher the monthly income (r=.77).
 
 
 
