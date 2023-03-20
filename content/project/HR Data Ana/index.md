@@ -1,5 +1,5 @@
 ---
-title: Understanding Turnover From The IBM HR Data set
+title: IBM HR Data Analytics Insights
 tags:
   -    
 date: '2016-04-27T00:00:00Z'
@@ -170,13 +170,187 @@ provide additional insight for which factors keep employees at the organization.
 
 **Conclusion**
 
-HR professionals, managers, and C-Suite members generally believed seeking a higher income
-was the key motivator, for employees quitting, during the Great Resignation. Our exploratory
-visualizations seemed to support this belief, but analyzing our data tells a deeper story. In this
-organization’s case, working overtime was the most impactful reason! Increasing salaries could
-decrease the number of employees working overtime, but what if the organization is financially
-constrained? Addressing the other significant variables could provide a more cost-effective and
-personalized approach. Overall, using advanced, statistical models created a better judgment of
+HR professionals, managers, and C-Suite members generally believed seeking a higher incom is a key motivator for employees quitting when turnover is high. Our analysis seem to support this belief at first, but closer inspection allows us to draw deeper insights. In this
+organization’s case, working overtime was more impactful than raises in retaining incumbents. Increasing salaries may work in the immediate to reduce turnover, but it is a situational fix that should be applied conservatively. Addressing the other significant variables could provide a more cost-effective and pragmatic solution. Overall, using advanced statistical modeling created a better judgment of
 employees’ behavior to predict attrition.
+
+
+**This project was run in {{< icon name="r-project" pack="fab" >}} (a programming language for statistical computing and graphics) using the following code:**
+
+```R
+#Load packages
+library (plyr)
+library (regclass)
+library (caTools)
+library (car)
+
+# Load the data
+data<- read.csv("WA_Fn-UseC_-HR-Employee-Attrition.csv", stringsAsFactors = F,
+na.strings=c("","NA"," "))
+
+#categorize variables 
+data$Attrition<- as.factor(data$Attrition)
+data$EducationField<-  as.factor(data$EducationField)
+data$BusinessTravel<-  as.factor(data$BusinessTravel)
+data$Department<-  as.factor(data$Department)
+data$JobRole<-  as.factor(data$JobRole)
+data$Over18<-  as.factor(data$Over18)
+data$OverTime<-  as.factor(data$OverTime)
+data$MaritalStatus<-  as.factor(data$MaritalStatus)
+data$Gender<-  as.factor(data$Gender)
+data<- subset(data, select = - c(EmployeeCount,StandardHours,EmployeeNumber))
+data$JobRole<- mapvalues(data$JobRole, from = c("Healthcare Representative",
+                                             "Human Resources",
+                                             "Laboratory Technician",
+                                             "Manager",
+                                             "Manufacturing Director",
+                                             "Research Director",
+                                             "Research Scientist",
+                                             "Sales Executive",
+                                             "Sales Representative"),
+                        to = c('healthcarerepresentative',
+                               'humanresources',
+                               'laboratorytechnician',
+                               'manager',
+                               'manufacturingdirector',
+                               'researchdirector',
+                               'researchscientist',
+                               'salesexecutive',
+                               'salesrepresentative'))
+data$Attrition<- mapvalues(data$Attrition, from=c('Yes', 'No'), to = c(1,0))
+
+# Split the data into a training set and a test set
+train_index <- sample(1:nrow(data), 0.8 * nrow(data))
+train <- data[train_index, ]
+test <- data[-train_index, ]
+
+#correlation matrix 
+library (Hmisc)
+library (car)
+library (corrplot)
+library (ascii)
+numerics <- unlist(lapply(train, is.numeric))
+numerics <- train[,numerics]
+cor.mtest <- function(mat, ...) {
+  mat <- as.matrix(mat)
+  n <- ncol(mat)
+  p.mat<- matrix(NA, n, n)
+  diag(p.mat) <- 0
+  for (i in 1:(n - 1)) {
+    for (j in (i + 1):n) {
+      tmp <- cor.test(mat[, i], mat[, j], ...)
+      p.mat[i, j] <- p.mat[j, i] <- tmp$p.value
+    }
+  }
+  colnames(p.mat) <- rownames(p.mat) <- colnames(mat) 
+  p.mat
+}
+M <- cor(numerics)
+p.mat <- cor.mtest(numerics)
+fig (20,20)
+title <- "Correlation Matrix"
+col <- colorRampPalette(c("#BB4444", "#EE9988", "#FFFFFF", "#77AADD", "#4477AA"))
+corrplot(M, method="shade", tl.cex = 0.5, number.cex=0.5, col=col(15),  
+         diag=FALSE,
+         addgrid.col = "black",
+         type = "lower", order = "FPC",
+         title = title, 
+         addCoef.col = "black",
+         p.mat = p.mat, sig.level = 0.05, insig="n",
+)
+
+
+#check for multicollinearity 
+numerics <- unlist(lapply(train, is.numeric))
+numerics <- train[,numerics]
+mc_check <- glm(train$Attrition~., data = numerics, family = "binomial")
+print(vif(mc_check))
+#remove highest VIF, and check new model
+train <- subset(train, select = - c(JobLevel))
+test <- subset(test, select = - c(JobLevel))
+numerics <- unlist(lapply(train, is.numeric))
+numerics <- train[,numerics]
+mc_check <- glm(train$Attrition~., data = numerics, family = "binomial")
+print(vif(mc_check))
+
+# Logistic regression 
+train <- subset(train, select = - c(JobInvolvement,
+                                    JobSatisfaction,
+                                    Education,
+                                    PercentSalaryHike,
+                                    RelationshipSatisfaction,
+                                    EducationField,
+                                    YearsSinceLastPromotion,
+                                    HourlyRate,
+                                    PerformanceRating,
+                                    Over18,
+                                    TrainingTimesLastYear,
+                                    DailyRate,
+                                    Gender))
+test <- subset(test, select = - c(JobInvolvement,
+                                  JobSatisfaction,
+                                  Education,
+                                  PercentSalaryHike,
+                                  RelationshipSatisfaction,
+                                  EducationField,
+                                  YearsSinceLastPromotion,
+                                  HourlyRate,
+                                  PerformanceRating,
+                                  Over18,
+                                  TrainingTimesLastYear,
+                                  DailyRate,
+                                  Gender))
+finalGlm <- glm(Attrition~., data = train, family = "binomial")
+options (scipen=999)
+print(finalGlm)
+summary(finalGlm)
+
+#predict on test set
+thresh <- 0.5
+predictedAttritionNumLog <- predict(finalGlm,newdata=test,type='response')
+predictedAttritionLog <- ifelse(predictedAttritionNumLog > thresh,1,0) 
+test$predictedAttrition <- predictedAttritionLog
+
+
+#confusion matrix
+warning=FALSE
+cm <- confusionMatrix(table(test$Attrition,test$predictedAttrition))
+test$predictedAttrition <- as.factor(test$predictedAttrition)
+
+table <- data.frame(confusionMatrix(test$Attrition, test$predictedAttrition)$table)
+print(cm)
+print(cm$byClass)
+
+#visualize the CM
+library (ggplot2)
+library (dplyr)
+plotTable <- table %>%
+  mutate(goodbad = ifelse(table$Prediction == table$Reference, "Good", "Bad")) %>%
+  group_by(Reference) %>%
+  mutate(prop = Freq/sum(Freq))
+
+confusionMatrix <- ggplot(data = plotTable, mapping = aes(x = Reference, y = Prediction, fill = goodbad, alpha = prop)) +
+  geom_tile() +
+  geom_text(aes(label = Freq), vjust = .5, fontface  = "bold", alpha = 25, size = 8) +
+  scale_fill_manual(name = " ", values = c(Good = "#2FC70A", Bad = "#F8100C")) +
+  scale_alpha(name = " ") +
+  theme_classic() +
+  xlim(rev(levels(table$Reference))) +
+  scale_y_discrete(name = "Predicted", limits = c("1","0")) + 
+  scale_x_discrete(name = "Actual", position = "top") +
+  #theme(legend.position = " ") +
+  theme(text=element_text(size=25,  family="sans")) + 
+  ggtitle("Confusion Matrix") +
+  theme(plot.title = element_text(size = 25, family="sans", face = "bold"))
+
+confusionMatrix
+
+#ROC curve
+library (pROC)
+ROCLog <- roc(test$Attrition,predictedAttritionNumLog)
+print(auc(ROCLog))
+plot(ROCLog, col = "#02babc", family = "sans", cex = 2, main = "Logistic Regression Model - ROC Curve
+AUC = 0.8279")
+```
 
 
