@@ -36,6 +36,12 @@ Confusion Matrix: In the field of machine learning (specifically the problem of 
 
 AUC Curve:  A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. AUC stands for "Area under the ROC Curve." AUC measures the entire two-dimensional area underneath the entire ROC curve.
 
+Ultimately our goal is to create a model to predict
+whether an employee will turnover. Logistic regression is a statistical technique that
+can differentiate which factors are significant with a dichotomous outcome (e.g.,
+to leave or to stay). Adding machine learning techniques then allows us to understand the
+strength of our predictive modelin in a more exact fashion`.
+
 
 
 **HR Data Analytics Project: Background**
@@ -84,13 +90,13 @@ What we see:
 
 
 
-o The higher the job level, the higher the monthly income (r=.95).
+ - The higher the job level, the higher the monthly income (r=.95).
 
-o The higher the job level, the higher the total working years (r=.78).
+ - The higher the job level, the higher the total working years (r=.78).
 
-o The higher the percent salary hike, the higher the performance (rating r=.77).
+ - The higher the percent salary hike, the higher the performance (rating r=.77).
 
-o The higher the total working years, the higher the monthly income (r=.77).
+ - The higher the total working years, the higher the monthly income (r=.77).
 
 -Logistic Regression:
 Logistic regression is a specialized linear model where regression weights (our input variables)
