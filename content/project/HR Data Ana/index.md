@@ -57,7 +57,7 @@ strength of our predictive model in in a more exact fashion.
 ![screen reader text](regression.jpg "Regression Result")
 
 
-![screen reader text](VIF1.jpg "VID Result 1")
+![screen reader text](VIF1.jpg "VIF 1")
 
 VIF: After categorizing and splitting our data, we should check if multicollinearity is
 occurring between our input variables. The Variance Inflation Factor is a technique
@@ -73,7 +73,7 @@ overall statistical power of our model.
 
 
 After removing “Job Level” from the data set, we can now see that none of our VIF
-scores are close to approaching 10. Let’s create our final model.
+scores are close to approaching 10. We then take a look at turn over at a glace in our next figure.
 
 
 ![screen reader text](1.jpg "Turn Over Glance")
@@ -83,6 +83,9 @@ Overall, about 84% of the workforce stayed while about 16% left. We can visually
 this is a moderately imbalanced dataset. Knowing our dataset is skewed (not normally
 distributed) helps us determine what further analyses we can conduct.
 
+
+![screen reader text](2.jpg "Gender Comparison")
+
 Is there a wage gap? It seems both overall and among departments that there are no
 major differences of the monthly average income between genders. This is good news for
 both our employees and the organization.
@@ -90,17 +93,21 @@ both our employees and the organization.
 **Key Insights** 
 {style="color: green"}
 
-o Age cohorts: Gen-Z workers show the highest frequency of turnover rate at
+
+![screen reader text](3.jpg "Gender Comparison")
+
+Age cohorts: Gen-Z workers show the highest frequency of turnover rate at
 around 36%- most likely to pursue other career opportunities. Boomers have the
 next highest proportion of employees leaving at 17%- most likely to retire.
 
-o Income: It seems that employees who left were paid less on average than those
+ 
+Income: It seems that employees who left were paid less on average than those
 who stayed. These differences were most significant within the HR and Research
 and Development departments. (HR should know better!)
 
 
 
-Here I use use R to create a correlation matix. This feature can help us quickly visualize the strongest
+Here I use use R to create a correlation matrix. This feature can help us quickly visualize the strongest
 relationships, rather than having to look around the entire visual.
 What we see:
 
