@@ -119,7 +119,7 @@ Qb3 Bxc5
 {style="color: green"}
 
 I threaten checkmate on b7 and force Black to capture the bishop with their pawn.
-![screen reader text](chess4.jpg "Cohort Breakdown")
+![screen reader text](chess4.jpg "Middle Game Continued")
 
 Rxc5 Nd5
 {style="color: green"}
