@@ -106,7 +106,7 @@ and Development departments. (HR should know better!)
 
 
 Here I use use R to create a correlation matrix. This feature can help us quickly visualize the strongest
-relationships, rather than having to look around the entire visual.
+relationships.
 What we see:
 
 ![screen reader text](correlation.jpg "Correlation Matrix")
@@ -142,6 +142,10 @@ Overall, our model shows that from 294 example cases, 237 were correctly predict
 14 were correctly predicted to leave. 36 were falsely predicted to stay and 7 were falsely
 predicted to leave. Compared to the data set, our produced, linear model holds an impressive 85%
 accuracy rating.
+
+![screen reader text](ROC.jpg "ROC")
+
+Our AUC is above the standard cutoff of 0.80.
 
 Since the data set is moderately imbalanced, relying on a model’s accuracy measure is
 insufficient. Receiver Operating Characteristic Curve (ROC curves) plot true positive rates
