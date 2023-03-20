@@ -104,4 +104,4 @@ White's bishop on c4 is now attacking Black's king, and Black pushes their g-paw
 
 **Here is a gif of the entire game:**
 
-![](https://www.chess.com/analysis/library/5NLPoz14EA?tab=review)
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODY1YzRhOWQwY2RkZDY3NWVlNmU2NWVlMjhhNTIwZDk0NWMzOTYxZCZjdD1n/lrBdQb0hHd6lPPHsey/giphy.gif)
