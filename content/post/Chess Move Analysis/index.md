@@ -1,5 +1,5 @@
 ---
-title: Chess Move Analysis
+title: Start Here (explanation)
 
 # Summary for listings and search engines
 summary: 
@@ -24,7 +24,7 @@ featured: false
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
   focal_point: ''
-  placement: 1
+  placement: 2
   preview_only: false
 
 authors:
