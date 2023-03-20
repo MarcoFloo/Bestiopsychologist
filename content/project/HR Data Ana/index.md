@@ -1,6 +1,6 @@
 ---
-title: HR Data Analytics
-summary: Logistic Regression is a type of machine learning algorithm that is used to predict/forecast variables that vary in numerical nature. Here I use it on real world data from the IBM HR Data Analytics set.
+title: HR Data Analytics: Turnover
+summary: Logistic Regression is a type of machine learning algorithm that is used to predict/forecast variables that vary in numerical nature. Here I use it (and other methods) on real world data from the IBM HR Data Analytics set.
 tags:
   -    
 date: '2016-04-27T00:00:00Z'
@@ -25,16 +25,18 @@ url_video: ''
 slides: ''
 ---
 
-**Logistic Regression: Background**
+**Analysis Used: Background**
 
 
-Logistic Regression is a popular statistical technique used in the field of Human Resources to predict the likelihood of a certain event happening. In HR, logistic regression is mainly used for two purposes:
+Logistic Regression: a popular statistical technique used in the field of Human Resources to predict the likelihood of a certain event happening. In HR, logistic regression is commonly used for employee attrition.
 
-Employee Attrition: One of the most common use cases for logistic regression in HR is to predict the likelihood of an employee leaving the company. By analyzing past data such as job satisfaction, salary, work environment, and other relevant factors, the model can predict which employees are most likely to quit their job in the near future. This information can help HR managers take proactive measures to reduce attrition and retain valuable employees.
+Correlation Matrix: A correlation matrix is a table which displays the correlation coefficients for different variables. The matrix depicts the correlation between all the possible pairs of values in a table.
 
-Employee Promotion: Another use case for logistic regression in HR is to predict the likelihood of an employee being promoted. By analyzing factors such as job performance, education, experience, and other relevant variables, the model can predict which employees are most likely to be promoted in the future. This information can help HR managers make informed decisions about promotions and ensure that the right employees are rewarded for their contributions.
+Confusion Matrix: In the field of machine learning (specifically the problem of statistical classification) a confusion matrix is a specific table layout that allows visualization of the performance of an algorithm.
 
-One advantage of using logistic regression in HR is that it can handle a large number of predictor variables and provide a clear and understandable prediction of the outcome. Additionally, logistic regression is easy to implement and can be used with a variety of data types, including continuous, categorical, and binary variables.
+AUC Curve:  A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. AUC stands for "Area under the ROC Curve." AUC measures the entire two-dimensional area underneath the entire ROC curve.
+
+
 
 **HR Data Analytics Project: Background**
 
@@ -44,28 +46,14 @@ One of the key features of the IBM HR data analytics set is the ability to track
 
 Another important aspect of the IBM HR data analytics set is the ability to track employee engagement. Employee engagement is a critical factor in the success of any organization, and the data provided by the analytics set can help companies to understand the level of engagement among their workforce. This information can be used to identify areas where engagement may be lacking, and to develop strategies to improve employee engagement and job satisfaction.
 
-**My COntribution**
+**My Contribution**
 
-Model with Machine Learning: The ultimate goal is to create a model to predict
+The ultimate goal is to create a model to predict
 whether an employee will quit or stay. Logistic regression is a statistical technique that
-can differentiate which factors are more impactful towards a dichotomous outcome (e.g.,
+can differentiate which factors are significant with a dichotomous outcome (e.g.,
 to leave or to stay). Adding machine learning techniques then allows us to understand the
 strength of our predictive model.
 
-Ideas to keep in mind: How can the organization reduce turnover? This step is arguably the
-most important since it connects data to organizational policy.
-
-
-About this data set: IBM HR Analytics Attrition Data set is an excellent dataset to demonstrate
-logistic regression and better understand attrition. Attrition is simply the turnover rate of
-employees. This data is publicly available here.
-
-
-Exploratory Analysis
-What does our data show at a glance? We can make some interesting observations without using
-advanced methods. Although Excel and R can be used for this process, Tableau produces
-dynamic data visualizations. These analyses will also help us determine how we should work
-with our data throughout the project.
 
 Overall, about 84% of the workforce stayed while about 16% left. We can visually see
 this is a moderately imbalanced dataset. Knowing our dataset is skewed (not normally
@@ -157,14 +145,14 @@ the better our model is classifying turnover as staying (1 as 1) and leaving (0 
 **Recommendations:**
 
 1. Companies may consider pay raises to increase retention. Although we don’t know this
-organization’s overtime policy, either limiting the amount of overtime or increasing its
+organization’s overtime policy, either limiting the amount of mandatory overtime or increasing its
 incentive could decrease turnover.
 
--If dates were provided for when employees started and left the organization, a survival
+2.If dates were provided for when employees started and left the organization, a survival
 analysis could have been conducted to predict not only what causes an employee to leave,
 but also when.
 
--While understanding why employees leave an organization is a great start, it is equally
+3.While understanding why employees leave an organization is a great start, it is equally
 important to understand why employees stay. Deploying an engagement survey can
 provide additional insight for which factors keep employees at the organization.
 
