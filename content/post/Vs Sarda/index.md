@@ -73,7 +73,7 @@ White castles to safety, and Black develops their bishop to e7 to prepare for ca
 
 a3 h6
 White prepares to push the b-pawn with a3 to prevent Black from playing b5. Black prepares to defend their g7-pawn with h6.
-![screen reader text](Chess3.jpg "Middle Game Beginning")
+![screen reader text](chess3.jpg "Middle Game Beginning")
 
 Rc1 Be7
 White develops their rook to the semi-open c-file, while Black continues to develop their pieces.
