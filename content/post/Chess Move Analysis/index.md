@@ -1,124 +1,49 @@
 ---
-title: "Get started"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Get started}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+title: Chess Move Analysis
+
+# Summary for listings and search engines
+summary: 
+
+# Link this post with a project
+projects: []
+
+# Date published
+date: '2020-12-13T00:00:00Z'
+
+# Date updated
+lastmod: '2020-12-13T00:00:00Z'
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+# Featured image
+# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
+image:
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
+  focal_point: ''
+  placement: 2
+  preview_only: false
+
+authors:
+  - admin
+  
+
+tags:
+  - 
+  
+
+categories:
+  - 
+  
 ---
+**What Are brilliant Moves In Chess?**
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  eval = identical(Sys.getenv("CHESS_TEST", unset = "0"), "1")
-)
-```
 
-Making moves with `{chess}` is easier than it looks. It has a PGN-like syntax
-that facilitates interaction and translation, so using the package should not
-be a problem if you have ever seen moves written down in a chess book.
+_Brilliant_ chess moves are creative, unexpected and effective moves in a chess game that lead to a strong advantage or a quick win. Some examples of brilliant moves include sacrifices, combinations, traps, and tactical blows. The beauty of a chess move lies in its efficiency, unexpectedness, and its ability to showcase a player's understanding of the game and their opponent's weaknesses. There is no one definition of a brilliant move as it is subjective.
 
-If you haven't, [PGN](https://en.wikipedia.org/wiki/Portable_Game_Notation)
-means Portable Game Notation and is "a standard plain text format for recording
-chess games (both the moves and related data), which can be read by humans and
-is also supported by most chess software."
+Chess.com (the current largest chess platform) uses an algorithm to follow your games that operates at varying levels of depth for calculations depending on how much time it has to "think". A move is "brilliant" if the engine doesn't think the move is best before the move is played, but after it is played the algorithm assess the move at the best possible option in the position. The evaluation of the position then changes significantly in that player's favor as a result.
 
-Here you can see the beginning of a game between Fischer and Sherwin, played in
-1957 at the New Jersey Open Championship. Each move is recorded in
-[SAN](https://en.wikipedia.org/wiki/Algebraic_chess_notation) and numbers
-followed by periods indicate the turn for each pair of half-moves. A number
-followed by three periods indicates the second half of the turn, or the move
-made by Black. Finally, parentheses indicate variations (not to be confused
-with [variants](https://en.wikipedia.org/wiki/Chess_variants)) which are
-"commentaries" made by the annotator, showcasing one or more alternatives for a
-move and how the game could have been.
-
-```
-1. e4 c5 2. Nf3 e6 3. d3 Nc6 4. g3 Nf6 ( 4... d5 5. Nbd2 Bd6 6. Bg2 Nge7 7. O-O
-O-O 8. Nh4 ) 5. Bg2 Be7 6. O-O O-O ( 6... d5 ) 7. Nbd2
-```
-
-If you think about it as a tree, this is what it would look like (rotated 90°):
-
-```
-                                                                ,->  d5
-                                                                |
-e4-> c5-> Nf3-> e6-> d3-> Nc6-> g3-> Nf6-> Bg2->  Be7-> O-O-> O-O->  Nbd2
-                                 |
-                                 `-> d5->  Nbd2-> Bd6-> Bg2-> Nge7-> O-O-> O-O-> Nh4
-```
-
-In R, the only way we can create a data structure that allows for nested
-substructures is with `list()`s. If each move was a string and each parenthesis
-(branch of the tree) was a `list()`, we would have something like this:
-
-```r
-"e4", "c5", "Nf3", "e6", "d3", "Nc6", "g3", "Nf6", list("d5", "Nbd2", "Bd6", "Bg2",
-"Nge7", "O-O", "O-O", "Nh4"), "Bg2", "Be7", "O-O", "O-O", list("d5"), "Nbd2"
-```
-
-Now we can pass this on to `move()` and create a faithful reproduction to
-Fisher's annotations in `{chess}`, and, since the function is very flexible, you
-can also break down the tree into multiple moves:
-
-```{r}
-library(chess)
-# Add moves to a new game
-fischer_sherwin <- game() %>%
-  move(
-    "e4", "c5", "Nf3", "e6", "d3", "Nc6", "g3", "Nf6", list("d5", "Nbd2", "Bd6", "Bg2",
-    "Nge7", "O-O", "O-O", "Nh4"), "Bg2", "Be7", "O-O", "O-O", list("d5"), "Nbd2"
-  )
-# See the last move from the mainline
-fischer_sherwin
-# Mainline and variations added separately
-fischer_sherwin <- game() %>%
-  move("e4", "c5", "Nf3", "e6", "d3", "Nc6", "g3", "Nf6") %>%
-  move(list("d5", "Nbd2", "Bd6", "Bg2", "Nge7", "O-O", "O-O", "Nh4")) %>%
-  move("Bg2", "Be7", "O-O", "O-O") %>%
-  move(list("d5")) %>%
-  move("Nbd2")
-# The same as above
-fischer_sherwin
-```
-
-With the game fully prepared, we can start to move up and down the tree,
-exploring each element of the game as well as its variations. `forward()` and
-`back()` advance and go back through the game, while `variations()` and
-`variation()` make seeing and entering variations possible.
-
-```{r}
-# Get the start of the game
-start <- root(fischer_sherwin)
-# Checkout the first move
-start %>%
-  forward()
-# Checkout the seventh move
-start %>%
-  forward(7)
-# See possibilities for eighth move
-start %>%
-  forward(7) %>%
-  variations()
-# Checkout the first move of variation
-start %>%
-  forward(7) %>%
-  variation(2)
-# Variation 1 is always the "trunk"
-start %>%
-  forward(7) %>%
-  variation(1)
-# Checkout second move of variation
-start %>%
-  forward(7) %>%
-  variation(2) %>%
-  forward()
-# Checkout second to last move
-fischer_sherwin %>%
-  back()
-# Checkout other possibilities for that
-fischer_sherwin %>%
-  back(2) %>%
-  variations()
-```
+Here I will post brilliant moves from my games that I find interesting.
