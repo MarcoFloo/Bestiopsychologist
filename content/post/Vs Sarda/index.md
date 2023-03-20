@@ -41,7 +41,7 @@ categories:
 ---
 
 
-![screen reader text](3.jpg "Cohort Breakdown")
+![screen reader text](chess1.jpg "Cohort Breakdown")
 
 d4 d5
 The game starts with the Queen's Pawn Opening. Both players are occupying the center with our pawns.
