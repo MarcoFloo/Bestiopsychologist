@@ -57,18 +57,26 @@ strength of our predictive model in in a more exact fashion.
 ![screen reader text](regression.jpg "Regression Result")
 
 
--VIF: After categorizing and splitting our data, we should check if multicollinearity is
+![screen reader text](VIF1.jpg "VID Result 1")
+
+VIF: After categorizing and splitting our data, we should check if multicollinearity is
 occurring between our input variables. The Variance Inflation Factor is a technique
 which creates a linear model with 1 dependent variable against multiple independent
 variables.
 
--We can see that “Job Level” produces the highest VIF score of 8.45, so we should
+We can see that “Job Level” produces the highest VIF score of 8.45, so we should
 eliminate it. Normally a VIF score of 10 or higher serves as the cutoff. However, this
 removal will increase the precision of our other independent variables and increases the
 overall statistical power of our model.
 
--After removing “Job Level” from the data set, we can now see that none of our VIF
+![screen reader text](VIF2.jpg "VIF 2")
+
+
+After removing “Job Level” from the data set, we can now see that none of our VIF
 scores are close to approaching 10. Let’s create our final model.
+
+
+![screen reader text](1.jpg "Turn Over Glance")
 
 
 Overall, about 84% of the workforce stayed while about 16% left. We can visually see
