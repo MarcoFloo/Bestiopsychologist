@@ -82,7 +82,7 @@ I bring my queen out early to attack Black's pawn on d4. Black moves their queen
 Nc3 Nf6
 {style="color: green"}
 
-I develop My knight to a good square, attacking Black's pawn on e5. Black defends the pawn with the knight.
+I develop my knight to a good square, attacking Black's pawn on e5. Black defends the pawn with the knight.
 
 O-O e6
 {style="color: green"}
