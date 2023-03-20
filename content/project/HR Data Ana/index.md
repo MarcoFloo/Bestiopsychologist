@@ -24,7 +24,7 @@ url_video: ''
 slides: ''
 ---
 
-**About Analysis Used**
+**Analyses Used**
 {style="color: green"}
 
 
@@ -109,7 +109,7 @@ Here I use use R to create a correlation matrix. This feature can help us quickl
 relationships, rather than having to look around the entire visual.
 What we see:
 
-![screen reader text](Correlation matrix.jpg "Correlation Matrix")
+![screen reader text](correlation.jpg "Correlation Matrix")
 
 **Key Insights** 
 {style="color: green"}
@@ -124,19 +124,6 @@ What we see:
 4. The higher the total working years, the higher the monthly income (r=.77).
 
 
-
--VIF: After categorizing and splitting our data, we should check if multicollinearity is
-occurring between our input variables. The Variance Inflation Factor is a technique
-which creates a linear model with 1 dependent variable against multiple independent
-variables.
-
--We can see that “Job Level” produces the highest VIF score of 8.45, so we should
-eliminate it. Normally a VIF score of 10 or higher serves as the cutoff. However, this
-removal will increase the precision of our other independent variables and increases the
-overall statistical power of our model.
-
--After removing “Job Level” from the data set, we can now see that none of our VIF
-scores are close to approaching 10. Let’s create our final model.
 
 **Interpreting the Model:** 
 {style="color: green"}
