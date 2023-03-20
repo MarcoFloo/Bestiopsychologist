@@ -78,10 +78,16 @@ o Income: It seems that employees who left were paid less on average than those
 who stayed. These differences were most significant within the HR and Research
 and Development departments. (HR should know better!)
 
-{{< figure src="download.jpg" caption="A caption" numbered="true" >}}
 
+```markmap {height="200px"}
+- Hugo Modules
+  - wowchemy
+  - wowchemy-plugins-netlify
+  - wowchemy-plugins-netlify-cms
+  - wowchemy-plugins-reveal
+```
 
--What factors significantly relate to each other? A correlation matrix displays correlations
+What factors significantly relate to each other? A correlation matrix displays correlations
 between 2 variables. Although this analysis can be conducted in Excel, R can sort the
 significant correlations together! This feature can help us quickly visualize the strongest
 relationships, rather than having to look around the entire visual.
