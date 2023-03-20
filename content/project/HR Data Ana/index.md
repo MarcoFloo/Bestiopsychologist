@@ -37,13 +37,6 @@ Confusion Matrix: In the field of machine learning (specifically the problem of 
 
 AUC Curve:  A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. AUC stands for "Area under the ROC Curve." AUC measures the entire two-dimensional area underneath the ROC curve.
 
-Ultimately our goal is to create a model to predict
-whether an employee will turnover. Logistic regression is a statistical technique that
-can differentiate which factors are significant with a dichotomous outcome (e.g.,
-to leave or to stay). Adding machine learning techniques then allows us to understand the
-strength of our predictive model in in a more exact fashion`.
-
-
 
 **HR Data Analytics Project: Background** 
 {style="color: green"}
@@ -57,11 +50,24 @@ Another important aspect of the IBM HR data analytics set is the ability to trac
 **My Contribution**
 {style="color: green"}
 
-The ultimate goal is to create a model to predict
-whether an employee will quit or stay. Logistic regression is a statistical technique that
+Ultimately our goal is to create a model to predict
+whether an employee will turnover. Logistic regression is a statistical technique that
 can differentiate which factors are significant with a dichotomous outcome (e.g.,
 to leave or to stay). Adding machine learning techniques then allows us to understand the
-strength of our predictive model.
+strength of our predictive model in in a more exact fashion`.
+
+-VIF: After categorizing and splitting our data, we should check if multicollinearity is
+occurring between our input variables. The Variance Inflation Factor is a technique
+which creates a linear model with 1 dependent variable against multiple independent
+variables.
+
+-We can see that “Job Level” produces the highest VIF score of 8.45, so we should
+eliminate it. Normally a VIF score of 10 or higher serves as the cutoff. However, this
+removal will increase the precision of our other independent variables and increases the
+overall statistical power of our model.
+
+-After removing “Job Level” from the data set, we can now see that none of our VIF
+scores are close to approaching 10. Let’s create our final model.
 
 
 Overall, about 84% of the workforce stayed while about 16% left. We can visually see
@@ -70,7 +76,7 @@ distributed) helps us determine what further analyses we can conduct.
 
 Is there a wage gap? It seems both overall and among departments that there are no
 major differences of the monthly average income between genders. This is good news for
-both our employees and the organization!
+both our employees and the organization.
 
 **Key Insights** 
 {style="color: green"}
@@ -84,20 +90,10 @@ who stayed. These differences were most significant within the HR and Research
 and Development departments. (HR should know better!)
 
 
-```markmap {height="200px"}
-- Hugo Modules
-  - wowchemy
-  - wowchemy-plugins-netlify
-  - wowchemy-plugins-netlify-cms
-  - wowchemy-plugins-reveal
-```
 
-What factors significantly relate to each other? A correlation matrix displays correlations
-between 2 variables. Although this analysis can be conducted in Excel, R can sort the
-significant correlations together! This feature can help us quickly visualize the strongest
+Here I use use R to create a correlation matix. This feature can help us quickly visualize the strongest
 relationships, rather than having to look around the entire visual.
 What we see:
-
 
 
  - The higher the job level, the higher the monthly income (r=.95).
@@ -108,10 +104,7 @@ What we see:
 
  - The higher the total working years, the higher the monthly income (r=.77).
 
--Logistic Regression:
-Logistic regression is a specialized linear model where regression weights (our input variables)
-are interpreted on a log odds scale for a dichotomous outcome. We can use this technique to
-calculate fit statistics and model evaluations.
+
 
 -VIF: After categorizing and splitting our data, we should check if multicollinearity is
 occurring between our input variables. The Variance Inflation Factor is a technique
@@ -124,7 +117,7 @@ removal will increase the precision of our other independent variables and incre
 overall statistical power of our model.
 
 -After removing “Job Level” from the data set, we can now see that none of our VIF
-scores are close to approaching 10. Let’s create our final model!
+scores are close to approaching 10. Let’s create our final model.
 
 **Interpreting the Model:** 
 {style="color: green"}
@@ -150,13 +143,14 @@ percentage of non-terms who were classified as terms, and we want to minimize. W
 determine its strength by looking at the are under the ROC curve or AUC. The higher our AUC,
 the better our model is classifying turnover as staying (1 as 1) and leaving (0 as 0).
 
--Top Reasons For Leaving:
+**Top Reasons For Leaving:**
+{style="color: green"}
 
--Monthly income.
+1. Monthly income.
 
--Longer Hours
+2. Longer Hours
 
--Lack Of Tenure
+3. Lack Of Tenure
 
 
 **Recommendations:** 
@@ -166,11 +160,11 @@ the better our model is classifying turnover as staying (1 as 1) and leaving (0 
 organization’s overtime policy, either limiting the amount of mandatory overtime or increasing its
 incentive could decrease turnover.
 
-2.If dates were provided for when employees started and left the organization, a survival
+2. If dates were provided for when employees started and left the organization, a survival
 analysis could have been conducted to predict not only what causes an employee to leave,
 but also when.
 
-3.While understanding why employees leave an organization is a great start, it is equally
+3. While understanding why employees leave an organization is a great start, it is equally
 important to understand why employees stay. Deploying an engagement survey can
 provide additional insight for which factors keep employees at the organization.
 
