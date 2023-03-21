@@ -189,7 +189,7 @@ organization’s case, working overtime was more impactful than raises in retain
 employees’ behavior to predict attrition.
 
 
-**This project was run in {{< icon name="r-project" pack="fab" >}} (a programming language for statistical computing and graphics) using the following code:**
+**This project was run in {{< icon name="r-project" pack="fab" >}} using the following code:**
 
 ```R
 #Load packages
